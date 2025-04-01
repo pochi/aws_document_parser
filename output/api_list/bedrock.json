@@ -1,0 +1,297 @@
+[
+  {
+    "name": "BatchDeleteEvaluationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDeleteEvaluationJob.html"
+  },
+  {
+    "name": "CreateEvaluationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateEvaluationJob.html"
+  },
+  {
+    "name": "CreateGuardrail",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrail.html"
+  },
+  {
+    "name": "CreateGuardrailVersion",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrailVersion.html"
+  },
+  {
+    "name": "CreateInferenceProfile",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateInferenceProfile.html"
+  },
+  {
+    "name": "CreateMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "CreateModelCopyJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCopyJob.html"
+  },
+  {
+    "name": "CreateModelCustomizationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCustomizationJob.html"
+  },
+  {
+    "name": "CreateModelImportJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelImportJob.html"
+  },
+  {
+    "name": "CreateModelInvocationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelInvocationJob.html"
+  },
+  {
+    "name": "CreatePromptRouter",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreatePromptRouter.html"
+  },
+  {
+    "name": "CreateProvisionedModelThroughput",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateProvisionedModelThroughput.html"
+  },
+  {
+    "name": "DeleteCustomModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteCustomModel.html"
+  },
+  {
+    "name": "DeleteGuardrail",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteGuardrail.html"
+  },
+  {
+    "name": "DeleteImportedModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteImportedModel.html"
+  },
+  {
+    "name": "DeleteInferenceProfile",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteInferenceProfile.html"
+  },
+  {
+    "name": "DeleteMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "DeleteModelInvocationLoggingConfiguration",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteModelInvocationLoggingConfiguration.html"
+  },
+  {
+    "name": "DeletePromptRouter",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeletePromptRouter.html"
+  },
+  {
+    "name": "DeleteProvisionedModelThroughput",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteProvisionedModelThroughput.html"
+  },
+  {
+    "name": "DeregisterMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeregisterMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "GetCustomModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetCustomModel.html"
+  },
+  {
+    "name": "GetEvaluationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetEvaluationJob.html"
+  },
+  {
+    "name": "GetFoundationModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetFoundationModel.html"
+  },
+  {
+    "name": "GetGuardrail",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetGuardrail.html"
+  },
+  {
+    "name": "GetImportedModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetImportedModel.html"
+  },
+  {
+    "name": "GetInferenceProfile",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html"
+  },
+  {
+    "name": "GetMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "GetModelCopyJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelCopyJob.html"
+  },
+  {
+    "name": "GetModelCustomizationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelCustomizationJob.html"
+  },
+  {
+    "name": "GetModelImportJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html"
+  },
+  {
+    "name": "GetModelInvocationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationJob.html"
+  },
+  {
+    "name": "GetModelInvocationLoggingConfiguration",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationLoggingConfiguration.html"
+  },
+  {
+    "name": "GetPromptRouter",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromptRouter.html"
+  },
+  {
+    "name": "GetProvisionedModelThroughput",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetProvisionedModelThroughput.html"
+  },
+  {
+    "name": "ListCustomModels",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCustomModels.html"
+  },
+  {
+    "name": "ListEvaluationJobs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListEvaluationJobs.html"
+  },
+  {
+    "name": "ListFoundationModels",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListFoundationModels.html"
+  },
+  {
+    "name": "ListGuardrails",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListGuardrails.html"
+  },
+  {
+    "name": "ListImportedModels",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListImportedModels.html"
+  },
+  {
+    "name": "ListInferenceProfiles",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListInferenceProfiles.html"
+  },
+  {
+    "name": "ListMarketplaceModelEndpoints",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListMarketplaceModelEndpoints.html"
+  },
+  {
+    "name": "ListModelCopyJobs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelCopyJobs.html"
+  },
+  {
+    "name": "ListModelCustomizationJobs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelCustomizationJobs.html"
+  },
+  {
+    "name": "ListModelImportJobs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelImportJobs.html"
+  },
+  {
+    "name": "ListModelInvocationJobs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelInvocationJobs.html"
+  },
+  {
+    "name": "ListPromptRouters",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListPromptRouters.html"
+  },
+  {
+    "name": "ListProvisionedModelThroughputs",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProvisionedModelThroughputs.html"
+  },
+  {
+    "name": "ListTagsForResource",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListTagsForResource.html"
+  },
+  {
+    "name": "PutModelInvocationLoggingConfiguration",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutModelInvocationLoggingConfiguration.html"
+  },
+  {
+    "name": "RegisterMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RegisterMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "StopEvaluationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopEvaluationJob.html"
+  },
+  {
+    "name": "StopModelCustomizationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopModelCustomizationJob.html"
+  },
+  {
+    "name": "StopModelInvocationJob",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopModelInvocationJob.html"
+  },
+  {
+    "name": "TagResource",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_TagResource.html"
+  },
+  {
+    "name": "UntagResource",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UntagResource.html"
+  },
+  {
+    "name": "UpdateGuardrail",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateGuardrail.html"
+  },
+  {
+    "name": "UpdateMarketplaceModelEndpoint",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateMarketplaceModelEndpoint.html"
+  },
+  {
+    "name": "UpdateProvisionedModelThroughput",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateProvisionedModelThroughput.html"
+  }
+]

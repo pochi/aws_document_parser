@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ApplyGuardrail",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ApplyGuardrail.html"
+  },
+  {
+    "name": "Converse",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html"
+  },
+  {
+    "name": "ConverseStream",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html"
+  },
+  {
+    "name": "GetAsyncInvoke",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_GetAsyncInvoke.html"
+  },
+  {
+    "name": "InvokeModel",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html"
+  },
+  {
+    "name": "InvokeModelWithResponseStream",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html"
+  },
+  {
+    "name": "ListAsyncInvokes",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ListAsyncInvokes.html"
+  },
+  {
+    "name": "StartAsyncInvoke",
+    "description": "",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html"
+  }
+]
