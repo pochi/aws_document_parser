@@ -5,6 +5,7 @@
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "dev": "ts-node main.ts"
+    "fetch_api_list": "ts-node main.ts",
+    "fetch_api_detail": "ts-node fetch_api_detail.ts"
   }
 }

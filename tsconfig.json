@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
       "lib": ["ES2020", "DOM"],
-      "types": ["node", "puppeteer"]
+      "types": ["node", "puppeteer"],
+      "esModuleInterop": true,
+      "downlevelIteration": true
     }
   }

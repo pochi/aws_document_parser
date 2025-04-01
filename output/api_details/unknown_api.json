@@ -1,0 +1,130 @@
+{
+  "apiName": "unknown_api",
+  "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html",
+  "requestSyntax": "<div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /async-invoke HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelId\">modelId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelInput\">modelInput</a>\": <code class=\"replaceable\">JSON value</code>,\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-outputDataConfig\">outputDataConfig</a>\": <span>{</span> ... },\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-tags\">tags</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-key\">key</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-value\">value</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code>",
+  "requestParameters": "The request does not use any URI parameters.",
+  "requestBody": "The request accepts the following data in JSON format.",
+  "responseSyntax": "<div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-response-invocationArn\">invocationArn</a>\": \"<b><em>string</em></b>\"\n}</code>",
+  "responseElements": "If the action is successful, the service sends back an HTTP 200 response.",
+  "errors": "For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.",
+  "pageStructure": {
+    "title": "",
+    "headings": [
+      {
+        "level": "H2",
+        "text": "Select your cookie preferences"
+      },
+      {
+        "level": "H2",
+        "text": "Customize cookie preferences"
+      },
+      {
+        "level": "H3",
+        "text": "Essential"
+      },
+      {
+        "level": "H3",
+        "text": "Performance"
+      },
+      {
+        "level": "H3",
+        "text": "Functional"
+      },
+      {
+        "level": "H3",
+        "text": "Advertising"
+      },
+      {
+        "level": "H2",
+        "text": "Unable to save cookie preferences"
+      },
+      {
+        "level": "H2",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "level": "H3",
+        "text": "API Reference"
+      },
+      {
+        "level": "H1",
+        "text": "StartAsyncInvoke"
+      },
+      {
+        "level": "H2",
+        "text": "Request Syntax"
+      },
+      {
+        "level": "H2",
+        "text": "URI Request Parameters"
+      },
+      {
+        "level": "H2",
+        "text": "Request Body"
+      },
+      {
+        "level": "H2",
+        "text": "Response Syntax"
+      },
+      {
+        "level": "H2",
+        "text": "Response Elements"
+      },
+      {
+        "level": "H2",
+        "text": "Errors"
+      },
+      {
+        "level": "H2",
+        "text": "See Also"
+      },
+      {
+        "level": "H3",
+        "text": "Discover highly rated pages"
+      },
+      {
+        "level": "H4",
+        "text": "Did this page help you?"
+      },
+      {
+        "level": "H4",
+        "text": "Next topic:"
+      },
+      {
+        "level": "H4",
+        "text": "Previous topic:"
+      },
+      {
+        "level": "H4",
+        "text": "Need help?"
+      },
+      {
+        "level": "H2",
+        "text": "On this page"
+      },
+      {
+        "level": "H3",
+        "text": "Introducing Amazon Q"
+      }
+    ]
+  },
+  "allSections": {
+    "Select your cookie preferences": "<span>We use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose “Customize” or “Decline” to decline performance cookies. <br><br> If you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose “Accept” or “Decline.” To make more detailed choices, choose “Customize.”</span>",
+    "Essential": "<p class=\"awsccc-cs-s-paragraph\">Essential cookies are necessary to provide our site and services and cannot be deactivated. They are usually set in response to your actions on the site, such as setting your privacy preferences, signing in, or filling in forms. </p>",
+    "Performance": "<p class=\"awsccc-cs-s-paragraph\">Performance cookies provide anonymous statistics about how customers navigate our site so we can improve site experience and performance. Approved third parties may perform analytics on our behalf, but they cannot use the data for their own purposes.</p><div><div class=\"awsccc-cs-s-cb-outer\"><div class=\"awscc-u-cb-checkbox-container\" data-id=\"awsccc-u-cb-performance-container\"><label data-id=\"awsccc-u-cb-performance-label\" class=\"awsccc-u-cb-label\"><input id=\"awsccc-u-cb-performance\" class=\"awsccc-u-cb-input\" type=\"checkbox\" aria-checked=\"false\"><span class=\"awsccc-cs-s-cb-hidden\">Allow performance category</span><svg viewBox=\"0 0 14 14\" aria-hidden=\"true\" focusable=\"false\" class=\"awscc-u-cb-checkbox\"><rect class=\"awscc-u-cb-checkbox-rect\" x=\"0.5\" y=\"0.5\" rx=\"1.5\" ry=\"1.5\" width=\"13\" height=\"13\"></rect><polyline class=\"awscc-u-cb-checkbox-poly-line \" points=\"2.5,7 6,10 11,3\"></polyline></svg></label></div></div><span class=\"awsccc-u-cb-text\">Allowed</span></div>",
+    "Functional": "<p class=\"awsccc-cs-s-paragraph\">Functional cookies help us provide useful site features, remember your preferences, and display relevant content. Approved third parties may set these cookies to provide certain site features. If you do not allow these cookies, then some or all of these services may not function properly.</p><div><div class=\"awsccc-cs-s-cb-outer\"><div class=\"awscc-u-cb-checkbox-container\" data-id=\"awsccc-u-cb-functional-container\"><label data-id=\"awsccc-u-cb-functional-label\" class=\"awsccc-u-cb-label\"><input id=\"awsccc-u-cb-functional\" class=\"awsccc-u-cb-input\" type=\"checkbox\" aria-checked=\"false\"><span class=\"awsccc-cs-s-cb-hidden\">Allow functional category</span><svg viewBox=\"0 0 14 14\" aria-hidden=\"true\" focusable=\"false\" class=\"awscc-u-cb-checkbox\"><rect class=\"awscc-u-cb-checkbox-rect\" x=\"0.5\" y=\"0.5\" rx=\"1.5\" ry=\"1.5\" width=\"13\" height=\"13\"></rect><polyline class=\"awscc-u-cb-checkbox-poly-line \" points=\"2.5,7 6,10 11,3\"></polyline></svg></label></div></div><span class=\"awsccc-u-cb-text\">Allowed</span></div>",
+    "Advertising": "<p class=\"awsccc-cs-s-paragraph\">Advertising cookies may be set through our site by us or our advertising partners and help us deliver relevant marketing content. If you do not allow these cookies, you will experience less relevant advertising.</p><div><div class=\"awsccc-cs-s-cb-outer\"><div class=\"awscc-u-cb-checkbox-container\" data-id=\"awsccc-u-cb-advertising-container\"><label data-id=\"awsccc-u-cb-advertising-label\" class=\"awsccc-u-cb-label\"><input id=\"awsccc-u-cb-advertising\" class=\"awsccc-u-cb-input\" type=\"checkbox\" aria-checked=\"false\"><span class=\"awsccc-cs-s-cb-hidden\">Allow advertising category</span><svg viewBox=\"0 0 14 14\" aria-hidden=\"true\" focusable=\"false\" class=\"awscc-u-cb-checkbox\"><rect class=\"awscc-u-cb-checkbox-rect\" x=\"0.5\" y=\"0.5\" rx=\"1.5\" ry=\"1.5\" width=\"13\" height=\"13\"></rect><polyline class=\"awscc-u-cb-checkbox-poly-line \" points=\"2.5,7 6,10 11,3\"></polyline></svg></label></div></div><span class=\"awsccc-u-cb-text\">Allowed</span></div>",
+    "StartAsyncInvoke": "<awsdocs-page-header><div class=\"H+dM-Hvk-bFSb3XTaZZptw==\"><a href=\"/pdfs/bedrock/latest/APIReference/bedrock-api.pdf#API_runtime_StartAsyncInvoke\">PDF</a></div></awsdocs-page-header><awsdocs-filter-selector id=\"awsdocs-filter-selector\"></awsdocs-filter-selector>Starts an asynchronous invocation.This operation requires permission for the <code class=\"code\">bedrock:InvokeModel</code> action.<div class=\"awsdocs-note-title\"><awsui-icon name=\"status-warning\" variant=\"error\"><span class=\"awsui_icon_h11ix_1ffmy_189 awsui_size-normal-mapped-height_h11ix_1ffmy_248 awsui_size-normal_h11ix_1ffmy_244 awsui_variant-error_h11ix_1ffmy_335\"><svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\"><path d=\"M8 5v4M8 10v2M6.52 1.88l-5.33 9.76c-.13.23-.19.5-.19.76 0 .88.71 1.59 1.59 1.59H13.4c.88 0 1.59-.71 1.59-1.59 0-.27-.07-.53-.19-.76L9.48 1.88C9.18 1.34 8.62 1 8 1s-1.18.34-1.48.88Z\" class=\"stroke-linejoin-round\"></path></svg></span></awsui-icon><h6>Important</h6></div><div class=\"awsdocs-note-text\"><p>To deny all inference access to resources that you specify in the modelId field, you\n         need to deny access to the <code class=\"code\">bedrock:InvokeModel</code> and\n            <code class=\"code\">bedrock:InvokeModelWithResponseStream</code> actions. Doing this also denies\n         access to the resource through the Converse API actions (<a href=\"https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html\">Converse</a> and <a href=\"https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html\">ConverseStream</a>). For more information see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-deny-inference\">Deny access for inference on specific models</a>.\n            </p></div>",
+    "Request Syntax": "<div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /async-invoke HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelId\">modelId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelInput\">modelInput</a>\": <code class=\"replaceable\">JSON value</code>,\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-outputDataConfig\">outputDataConfig</a>\": <span>{</span> ... },\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-tags\">tags</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-key\">key</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-value\">value</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code>",
+    "URI Request Parameters": "The request does not use any URI parameters.",
+    "Request Body": "The request accepts the following data in JSON format.\n          \n          \n          \n          \n          \n      <dl>\n            <dt id=\"bedrock-runtime_StartAsyncInvoke-request-clientRequestToken\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_RequestSyntax\">clientRequestToken</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Specify idempotency token to ensure that requests are not duplicated.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 256.</p>\n               <p>Pattern: <code class=\"code\">^[!-~]*$</code>\n               </p>\n               <p>Required: No</p>\n            </dd>\n          \n            <dt id=\"bedrock-runtime_StartAsyncInvoke-request-modelId\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_RequestSyntax\">modelId</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The model to invoke.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 256.</p>\n               <p>Pattern: <code class=\"code\">^[a-zA-Z_\\.\\-/0-9:]+$</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"bedrock-runtime_StartAsyncInvoke-request-modelInput\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_RequestSyntax\">modelInput</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Input to send to the model.</p>\n               <p>Type: JSON value</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"bedrock-runtime_StartAsyncInvoke-request-outputDataConfig\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_RequestSyntax\">outputDataConfig</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Where to store the output.</p>\n               <p>Type: <a href=\"./API_runtime_AsyncInvokeOutputDataConfig.html\">AsyncInvokeOutputDataConfig</a> object</p>\n               <p>\n                  <b>Note: </b>This object is a Union. Only one member of this object can be specified or returned.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"bedrock-runtime_StartAsyncInvoke-request-tags\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_RequestSyntax\">tags</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Tags to apply to the invocation.</p>\n               <p>Type: Array of <a href=\"./API_runtime_Tag.html\">Tag</a> objects</p>\n               <p>Array Members: Minimum number of 0 items. Maximum number of 200 items.</p>\n               <p>Required: No</p>\n            </dd>\n         </dl>",
+    "Response Syntax": "<div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-response-invocationArn\">invocationArn</a>\": \"<b><em>string</em></b>\"\n}</code>",
+    "Response Elements": "If the action is successful, the service sends back an HTTP 200 response.The following data is returned in JSON format by the service.\n          \n      <dl>\n            <dt id=\"bedrock-runtime_StartAsyncInvoke-response-invocationArn\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_runtime_StartAsyncInvoke_ResponseSyntax\">invocationArn</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The ARN of the invocation.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 2048.</p>\n               <p>Pattern: <code class=\"code\">^arn:aws(-[^:]+)?:bedrock:[a-z0-9-]<span>{</span>1,20}:[0-9]<span>{</span>12}:async-invoke/[a-z0-9]<span>{</span>12}$</code>\n               </p>\n            </dd>\n         </dl>",
+    "Errors": "For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.\n          \n          \n          \n          \n          \n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  AccessDeniedException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The request is denied because you do not have sufficient permissions to perform the requested action. For troubleshooting this error, \n         see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-access-denied\">AccessDeniedException</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 403</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ConflictException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Error occurred because of a conflict while performing an operation.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>An internal server error occurred. For troubleshooting this error, \n         see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-internal-failure\">InternalFailure</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ResourceNotFoundException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The specified resource ARN was not found. For troubleshooting this error, \n         see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-resource-not-found\">ResourceNotFound</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 404</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ServiceQuotaExceededException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Your request exceeds the service quota for your account. You can view your quotas at <a href=\"https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html\">Viewing service quotas</a>. You can resubmit your request later.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ServiceUnavailableException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The service isn't currently available. For troubleshooting this error, \n         see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-service-unavailable\">ServiceUnavailable</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 503</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ThrottlingException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Your request was denied due to exceeding the account quotas for <em>Amazon Bedrock</em>. For\n         troubleshooting this error, see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-throttling-exception\">ThrottlingException</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 429</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The input fails to satisfy the constraints specified by <em>Amazon Bedrock</em>. For troubleshooting this error, \n         see <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/troubleshooting-api-error-codes.html#ts-validation-error\">ValidationError</a> in the Amazon Bedrock User Guide</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl>",
+    "See Also": "For more information about using this API in one of the language-specific AWS SDKs, see the following:\n          \n          \n          \n          \n          \n          \n          \n          \n          \n      <ul class=\"itemizedlist\"><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/aws-cli/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS Command Line Interface</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/DotNetSDKV3/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for .NET</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForCpp/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for C++</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForGoV2/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for Go v2</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForJavaV2/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for Java V2</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for JavaScript V3</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForPHPV3/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for PHP V3</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/boto3/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for Python</a>\n            </p>\n         </li><li class=\"listitem\">\n            <p>\n               <a href=\"https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-runtime-2023-09-30/StartAsyncInvoke\">AWS SDK for Ruby V3</a>\n            </p>\n         </li></ul>",
+    "Discover highly rated pages": " &nbsp;<div class=\"awsui_root_18wu0_1yxfb_920 awsui_box_18wu0_1yxfb_172 awsui_gen-ai-label-variant_18wu0_1yxfb_277 awsui_d-inline-block_18wu0_1yxfb_905 awsui_color-default_18wu0_1yxfb_172 awsui_font-size-default_18wu0_1yxfb_188 awsui_font-weight-default_18wu0_1yxfb_228\"><span class=\"awsui_icon_h11ix_1ffmy_189 awsui_size-small-mapped-height_h11ix_1ffmy_229 awsui_size-small_h11ix_1ffmy_225 awsui_variant-normal_h11ix_1ffmy_320\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" data-testid=\"gen-ai-filled\"><path d=\"m8 4.4 1.018 2.582L11.6 8 9.018 9.018 8 11.6 6.982 9.018 4.4 8l2.582-1.018L8 4.4ZM2.405 2.41l.002-.003.003-.002-.003-.002-.002-.003-.002.003-.003.002.003.002.002.003Z\" class=\"filled\"></path></svg></span>Abstracts generated by AI</div>",
+    "Next topic:": "<a id=\"link-self:r18:\" class=\"awsui_link_4c84z_huzqy_145 awsui_variant-secondary_4c84z_huzqy_211 awsui_font-size-body-m_4c84z_huzqy_475\" data-analytics-funnel-value=\"link:r17:\" href=\"./API_Types.html\">Data Types</a>",
+    "Previous topic:": "<a id=\"link-self:r1b:\" class=\"awsui_link_4c84z_huzqy_145 awsui_variant-secondary_4c84z_huzqy_211 awsui_font-size-body-m_4c84z_huzqy_475\" data-analytics-funnel-value=\"link:r1a:\" href=\"./API_runtime_ListAsyncInvokes.html\">ListAsyncInvokes</a>",
+    "Introducing Amazon Q": "<button class=\"popoverCloseIcon-0-1-29 popoverCloseIcon-d5-0-1-35 awsui_button_vjswe_lssc8_157 awsui_variant-icon_vjswe_lssc8_280 awsui_button-no-text_vjswe_lssc8_556\" aria-label=\"Close popover\" title=\"Close popover\" data-analytics-funnel-value=\"button:r0:\" type=\"submit\" data-analytics-performance-mark=\"0-1743502326367-6160\"><span class=\"awsui_icon_vjswe_lssc8_585 awsui_icon-left_vjswe_lssc8_585 awsui_icon_h11ix_1ffmy_189 awsui_size-normal-mapped-height_h11ix_1ffmy_248 awsui_size-normal_h11ix_1ffmy_244 awsui_variant-normal_h11ix_1ffmy_320\"><svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\"><path d=\"m2 1.71 12 12M2 13.71l12-12\" class=\"stroke-linejoin-round\"></path></svg></span></button>"
+  }
+}

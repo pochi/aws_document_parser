@@ -21,7 +21,6 @@ async function scrapingApiDocuments(urls: string[]) {
 
 interface ApiOperation {
   name: string;
-  description: string;
   link: string;
 }
 
@@ -46,7 +45,6 @@ async function scrapeBedrockApiOperations(url: string): Promise<ApiOperation[]> 
       if (linkElement && linkElement.textContent && linkElement.href) {
         operations.push({
           name: linkElement.textContent.trim(),
-          description: item.textContent?.replace(linkElement.textContent, '').trim() || '',
           link: linkElement.href
         });
       }
