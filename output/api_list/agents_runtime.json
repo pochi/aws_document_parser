@@ -1,0 +1,102 @@
+[
+  {
+    "name": "CreateInvocation",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateInvocation.html"
+  },
+  {
+    "name": "CreateSession",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateSession.html"
+  },
+  {
+    "name": "DeleteAgentMemory",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteAgentMemory.html"
+  },
+  {
+    "name": "DeleteSession",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteSession.html"
+  },
+  {
+    "name": "EndSession",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_EndSession.html"
+  },
+  {
+    "name": "GenerateQuery",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GenerateQuery.html"
+  },
+  {
+    "name": "GetAgentMemory",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetAgentMemory.html"
+  },
+  {
+    "name": "GetInvocationStep",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html"
+  },
+  {
+    "name": "GetSession",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetSession.html"
+  },
+  {
+    "name": "InvokeAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html"
+  },
+  {
+    "name": "InvokeFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeFlow.html"
+  },
+  {
+    "name": "InvokeInlineAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html"
+  },
+  {
+    "name": "ListInvocations",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListInvocations.html"
+  },
+  {
+    "name": "ListInvocationSteps",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListInvocationSteps.html"
+  },
+  {
+    "name": "ListSessions",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListSessions.html"
+  },
+  {
+    "name": "ListTagsForResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListTagsForResource.html"
+  },
+  {
+    "name": "OptimizePrompt",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OptimizePrompt.html"
+  },
+  {
+    "name": "PutInvocationStep",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html"
+  },
+  {
+    "name": "Rerank",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Rerank.html"
+  },
+  {
+    "name": "Retrieve",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html"
+  },
+  {
+    "name": "RetrieveAndGenerate",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html"
+  },
+  {
+    "name": "RetrieveAndGenerateStream",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateStream.html"
+  },
+  {
+    "name": "TagResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TagResource.html"
+  },
+  {
+    "name": "UntagResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_UntagResource.html"
+  },
+  {
+    "name": "UpdateSession",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_UpdateSession.html"
+  }
+]

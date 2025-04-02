@@ -1,0 +1,35 @@
+{
+  "apiName": "GetModelInvocationLoggingConfiguration",
+  "apiNameFromUrl": "GetModelInvocationLoggingConfiguration",
+  "apiNameFromFile": "GetModelInvocationLoggingConfiguration",
+  "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationLoggingConfiguration.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs http\" tabindex=\"0\"><span class=\"hljs-keyword\">GET</span> <span class=\"hljs-string\">/logging/modelinvocations</span> <span class=\"hljs-meta\">HTTP/1.1</span>\n</code></pre>",
+  "requestParameters": "<p>The request does not use any URI parameters.</p>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-GetModelInvocationLoggingConfiguration-response-loggingConfig\">loggingConfig</a>\": <span>{</span> \n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-cloudWatchConfig\">cloudWatchConfig</a>\": <span>{</span> \n         \"<a href=\"./API_CloudWatchConfig.html#bedrock-Type-CloudWatchConfig-largeDataDeliveryS3Config\">largeDataDeliveryS3Config</a>\": <span>{</span> \n            \"<a href=\"./API_S3Config.html#bedrock-Type-S3Config-bucketName\">bucketName</a>\": \"<b><em>string</em></b>\",\n            \"<a href=\"./API_S3Config.html#bedrock-Type-S3Config-keyPrefix\">keyPrefix</a>\": \"<b><em>string</em></b>\"\n         },\n         \"<a href=\"./API_CloudWatchConfig.html#bedrock-Type-CloudWatchConfig-logGroupName\">logGroupName</a>\": \"<b><em>string</em></b>\",\n         \"<a href=\"./API_CloudWatchConfig.html#bedrock-Type-CloudWatchConfig-roleArn\">roleArn</a>\": \"<b><em>string</em></b>\"\n      },\n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-embeddingDataDeliveryEnabled\">embeddingDataDeliveryEnabled</a>\": <b><em>boolean</em></b>,\n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-imageDataDeliveryEnabled\">imageDataDeliveryEnabled</a>\": <b><em>boolean</em></b>,\n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-s3Config\">s3Config</a>\": <span>{</span> \n         \"<a href=\"./API_S3Config.html#bedrock-Type-S3Config-bucketName\">bucketName</a>\": \"<b><em>string</em></b>\",\n         \"<a href=\"./API_S3Config.html#bedrock-Type-S3Config-keyPrefix\">keyPrefix</a>\": \"<b><em>string</em></b>\"\n      },\n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-textDataDeliveryEnabled\">textDataDeliveryEnabled</a>\": <b><em>boolean</em></b>,\n      \"<a href=\"./API_LoggingConfig.html#bedrock-Type-LoggingConfig-videoDataDeliveryEnabled\">videoDataDeliveryEnabled</a>\": <b><em>boolean</em></b>\n   }\n}</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in JSON format by the service.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"bedrock-GetModelInvocationLoggingConfiguration-response-loggingConfig\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetModelInvocationLoggingConfiguration_ResponseSyntax\">loggingConfig</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The current configuration values.</p>\n               <p>Type: <a href=\"./API_LoggingConfig.html\">LoggingConfig</a> object</p>\n            </dd>\n         </dl></div>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  AccessDeniedException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The request is denied because of missing access permissions.</p>\n               <p>HTTP Status Code: 403</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>An internal server error occurred. Retry your request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ThrottlingException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The number of requests exceeds the limit. Resubmit your request later.</p>\n               <p>HTTP Status Code: 429</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Bedrock": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

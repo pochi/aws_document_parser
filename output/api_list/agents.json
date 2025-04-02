@@ -1,0 +1,290 @@
+[
+  {
+    "name": "AssociateAgentCollaborator",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentCollaborator.html"
+  },
+  {
+    "name": "AssociateAgentKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentKnowledgeBase.html"
+  },
+  {
+    "name": "CreateAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html"
+  },
+  {
+    "name": "CreateAgentActionGroup",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html"
+  },
+  {
+    "name": "CreateAgentAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentAlias.html"
+  },
+  {
+    "name": "CreateDataSource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html"
+  },
+  {
+    "name": "CreateFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html"
+  },
+  {
+    "name": "CreateFlowAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowAlias.html"
+  },
+  {
+    "name": "CreateFlowVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowVersion.html"
+  },
+  {
+    "name": "CreateKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html"
+  },
+  {
+    "name": "CreatePrompt",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreatePrompt.html"
+  },
+  {
+    "name": "CreatePromptVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreatePromptVersion.html"
+  },
+  {
+    "name": "DeleteAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgent.html"
+  },
+  {
+    "name": "DeleteAgentActionGroup",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgentActionGroup.html"
+  },
+  {
+    "name": "DeleteAgentAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgentAlias.html"
+  },
+  {
+    "name": "DeleteAgentVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgentVersion.html"
+  },
+  {
+    "name": "DeleteDataSource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html"
+  },
+  {
+    "name": "DeleteFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlow.html"
+  },
+  {
+    "name": "DeleteFlowAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowAlias.html"
+  },
+  {
+    "name": "DeleteFlowVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowVersion.html"
+  },
+  {
+    "name": "DeleteKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBase.html"
+  },
+  {
+    "name": "DeleteKnowledgeBaseDocuments",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBaseDocuments.html"
+  },
+  {
+    "name": "DeletePrompt",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeletePrompt.html"
+  },
+  {
+    "name": "DisassociateAgentCollaborator",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DisassociateAgentCollaborator.html"
+  },
+  {
+    "name": "DisassociateAgentKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DisassociateAgentKnowledgeBase.html"
+  },
+  {
+    "name": "GetAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html"
+  },
+  {
+    "name": "GetAgentActionGroup",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentActionGroup.html"
+  },
+  {
+    "name": "GetAgentAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentAlias.html"
+  },
+  {
+    "name": "GetAgentCollaborator",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentCollaborator.html"
+  },
+  {
+    "name": "GetAgentKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentKnowledgeBase.html"
+  },
+  {
+    "name": "GetAgentVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentVersion.html"
+  },
+  {
+    "name": "GetDataSource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetDataSource.html"
+  },
+  {
+    "name": "GetFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlow.html"
+  },
+  {
+    "name": "GetFlowAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlowAlias.html"
+  },
+  {
+    "name": "GetFlowVersion",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlowVersion.html"
+  },
+  {
+    "name": "GetIngestionJob",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html"
+  },
+  {
+    "name": "GetKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBase.html"
+  },
+  {
+    "name": "GetKnowledgeBaseDocuments",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBaseDocuments.html"
+  },
+  {
+    "name": "GetPrompt",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetPrompt.html"
+  },
+  {
+    "name": "IngestKnowledgeBaseDocuments",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_IngestKnowledgeBaseDocuments.html"
+  },
+  {
+    "name": "ListAgentActionGroups",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentActionGroups.html"
+  },
+  {
+    "name": "ListAgentAliases",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentAliases.html"
+  },
+  {
+    "name": "ListAgentCollaborators",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentCollaborators.html"
+  },
+  {
+    "name": "ListAgentKnowledgeBases",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentKnowledgeBases.html"
+  },
+  {
+    "name": "ListAgents",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgents.html"
+  },
+  {
+    "name": "ListAgentVersions",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentVersions.html"
+  },
+  {
+    "name": "ListDataSources",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListDataSources.html"
+  },
+  {
+    "name": "ListFlowAliases",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowAliases.html"
+  },
+  {
+    "name": "ListFlows",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlows.html"
+  },
+  {
+    "name": "ListFlowVersions",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowVersions.html"
+  },
+  {
+    "name": "ListIngestionJobs",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListIngestionJobs.html"
+  },
+  {
+    "name": "ListKnowledgeBaseDocuments",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListKnowledgeBaseDocuments.html"
+  },
+  {
+    "name": "ListKnowledgeBases",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListKnowledgeBases.html"
+  },
+  {
+    "name": "ListPrompts",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListPrompts.html"
+  },
+  {
+    "name": "ListTagsForResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListTagsForResource.html"
+  },
+  {
+    "name": "PrepareAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html"
+  },
+  {
+    "name": "PrepareFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareFlow.html"
+  },
+  {
+    "name": "StartIngestionJob",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html"
+  },
+  {
+    "name": "StopIngestionJob",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StopIngestionJob.html"
+  },
+  {
+    "name": "TagResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_TagResource.html"
+  },
+  {
+    "name": "UntagResource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UntagResource.html"
+  },
+  {
+    "name": "UpdateAgent",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html"
+  },
+  {
+    "name": "UpdateAgentActionGroup",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html"
+  },
+  {
+    "name": "UpdateAgentAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentAlias.html"
+  },
+  {
+    "name": "UpdateAgentCollaborator",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentCollaborator.html"
+  },
+  {
+    "name": "UpdateAgentKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentKnowledgeBase.html"
+  },
+  {
+    "name": "UpdateDataSource",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateDataSource.html"
+  },
+  {
+    "name": "UpdateFlow",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlow.html"
+  },
+  {
+    "name": "UpdateFlowAlias",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlowAlias.html"
+  },
+  {
+    "name": "UpdateKnowledgeBase",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateKnowledgeBase.html"
+  },
+  {
+    "name": "UpdatePrompt",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdatePrompt.html"
+  },
+  {
+    "name": "ValidateFlowDefinition",
+    "link": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ValidateFlowDefinition.html"
+  }
+]

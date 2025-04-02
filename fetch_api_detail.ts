@@ -8,6 +8,22 @@ interface ApiOperation {
   link: string;
 }
 
+// インターフェースを定義
+interface ApiDetailSections {
+  requestSyntax?: string;
+  requestParameters?: string;
+  requestBody?: string;
+  responseSyntax?: string;
+  responseElements?: string;
+  errors?: string;
+  // 他の必要なプロパティもここに追加
+}
+
+interface ApiDetailData {
+  sections: ApiDetailSections;
+  // 他の必要なプロパティもここに追加
+}
+
 // ディレクトリ内のJSONファイルを取得
 async function getJsonFiles(dirPath: string): Promise<string[]> {
   try {
@@ -193,13 +209,6 @@ async function scrapeAWSDocs(url: string) {
         }
       });
       
-      // ページ全体の見出し構造を記録（デバッグ用）
-      data.headingStructure = headings.map(h => ({
-        tag: h.tagName,
-        text: h.textContent.trim(),
-        id: h.id || 'no-id'
-      }));
-      
       return data;
     });
     
@@ -219,7 +228,14 @@ async function scrapeAWSDocs(url: string) {
       // ページからすべてのDIVを取得し構造を分析
       const alternativeResult = await page.evaluate(() => {
         const data = {
-          sections: {},
+          sections: {
+            requestSyntax: '',
+            requestParameters: '',
+            requestBody: '',
+            responseSyntax: '',
+            responseElements: '',
+            errors: ''
+          },
           divTree: []
         };
         
@@ -231,16 +247,6 @@ async function scrapeAWSDocs(url: string) {
           // 15個以上の子要素を持つdivのみ対象
           if (div.children.length >= 15) {
             const childTypes = Array.from(div.children).map(c => c.tagName);
-            
-            // 各divの情報を記録
-            data.divTree.push({
-              index,
-              id: div.id || 'no-id',
-              className: div.className,
-              childCount: div.children.length,
-              childTypes: childTypes,
-              textPreview: div.textContent.substring(0, 100) + '...'
-            });
             
             // テキスト内容に基づいてセクションを検出
             const text = div.textContent.toLowerCase();
@@ -275,8 +281,6 @@ async function scrapeAWSDocs(url: string) {
         }
       }
       
-      // div構造をデバッグデータに追加
-      result.divTree = alternativeResult.divTree;
     }
     
     // ファイル名から抽出したAPIの実際の名前
@@ -297,8 +301,6 @@ async function scrapeAWSDocs(url: string) {
       errors: result.errors || "Not found",
       debugInfo: {
         rawSections: result.rawSections,
-        headingStructure: result.headingStructure,
-        divTree: result.divTree
       }
     };
     
@@ -330,7 +332,7 @@ async function processOperations(operations: ApiOperation[]) {
     await Promise.all(chunk.map(async (op) => {
       console.log(`    - 処理中: ${op.name}`);
       try {
-        console.log(op.link);
+        console.log(op.link)
         const { apiName, result } = await scrapeAWSDocs(op.link);
         // 結果を保存
         await saveResult(apiName || op.name, result);

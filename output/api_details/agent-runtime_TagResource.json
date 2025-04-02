@@ -1,0 +1,38 @@
+{
+  "apiName": "agent-runtime_TagResource",
+  "apiNameFromUrl": "agent-runtime_TagResource",
+  "apiNameFromFile": "agent-runtime_TagResource",
+  "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TagResource.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /tags/<code class=\"replaceable\">resourceArn</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_TagResource-request-tags\">tags</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"bedrock-agent-runtime_TagResource-request-uri-resourceArn\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_agent-runtime_TagResource_RequestSyntax\">resourceArn</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The Amazon Resource Name (ARN) of the resource to tag.</p>\n               <p>Length Constraints: Minimum length of 20. Maximum length of 1011.</p>\n               <p>Pattern: <code class=\"code\">(^arn:aws(-[^:]+)?:bedrock:[a-zA-Z0-9-]+:[0-9]<span>{</span>12}:(session)/[a-f0-9]<span>{</span>8}-[a-f0-9]<span>{</span>4}-[a-f0-9]<span>{</span>4}-[a-f0-9]<span>{</span>4}-[a-f0-9]<span>{</span>12}$)</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request accepts the following data in JSON format.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"bedrock-agent-runtime_TagResource-request-tags\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_agent-runtime_TagResource_RequestSyntax\">tags</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>An object containing key-value pairs that define the tags to attach to the resource.</p>\n               <p>Type: String to string map</p>\n               <p>Map Entries: Maximum number of 200 items.</p>\n               <p>Key Length Constraints: Minimum length of 1. Maximum length of 128.</p>\n               <p>Key Pattern: <code class=\"code\">^[a-zA-Z0-9\\s._:/=+@-]*$</code>\n               </p>\n               <p>Value Length Constraints: Minimum length of 0. Maximum length of 256.</p>\n               <p>Value Pattern: <code class=\"code\">^[a-zA-Z0-9\\s._:/=+@-]*$</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs apache\" tabindex=\"0\"><span class=\"hljs-attribute\">HTTP</span>/<span class=\"hljs-number\">1</span>.<span class=\"hljs-number\">1</span> <span class=\"hljs-number\">200</span>\n</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.</p>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n          \n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  AccessDeniedException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The request is denied because of missing access permissions. Check your permissions and retry your request.</p>\n               <p>HTTP Status Code: 403</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>An internal server error occurred. Retry your request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ResourceNotFoundException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The specified resource Amazon Resource Name (ARN) was not found. Check the Amazon Resource Name (ARN) and try your request again.</p>\n               <p>HTTP Status Code: 404</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ServiceQuotaExceededException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The number of requests exceeds the service quota. Resubmit your request later.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ThrottlingException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The number of requests exceeds the limit. Resubmit your request later.</p>\n               <p>HTTP Status Code: 429</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Input validation failed. Check your request parameters and retry the request.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Bedrock": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "Examples": "見出し検出",
+      "Example request": "見出し検出",
+      "Example response": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

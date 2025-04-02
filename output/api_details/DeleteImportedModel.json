@@ -1,0 +1,38 @@
+{
+  "apiName": "DeleteImportedModel",
+  "apiNameFromUrl": "DeleteImportedModel",
+  "apiNameFromFile": "DeleteImportedModel",
+  "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteImportedModel.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /imported-models/<code class=\"replaceable\">modelIdentifier</code> HTTP/1.1\n</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"bedrock-DeleteImportedModel-request-uri-modelIdentifier\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteImportedModel_RequestSyntax\">modelIdentifier</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Name of the imported model to delete.</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 1011.</p>\n               <p>Pattern: <code class=\"code\">^(arn:aws(-[^:]+)?:bedrock:[a-z0-9-]<span>{</span>1,20}:[0-9]<span>{</span>12}:imported-model/[a-z0-9]<span>{</span>12})|(([0-9a-zA-Z][_-]?)+)$</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs apache\" tabindex=\"0\"><span class=\"hljs-attribute\">HTTP</span>/<span class=\"hljs-number\">1</span>.<span class=\"hljs-number\">1</span> <span class=\"hljs-number\">200</span>\n</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.</p>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n          \n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  AccessDeniedException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The request is denied because of missing access permissions.</p>\n               <p>HTTP Status Code: 403</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ConflictException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Error occurred because of a conflict while performing an operation.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>An internal server error occurred. Retry your request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ResourceNotFoundException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The specified resource Amazon Resource Name (ARN) was not found. Check the Amazon Resource Name (ARN) and try your request again.</p>\n               <p>HTTP Status Code: 404</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ThrottlingException\n               </b>\n            </span></dt>\n            <dd>\n               <p>The number of requests exceeds the limit. Resubmit your request later.</p>\n               <p>HTTP Status Code: 429</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Input validation failed. Check your request parameters and retry the request.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Bedrock": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "Examples": "見出し検出",
+      "Delete an imported model": "見出し検出",
+      "Example response": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}
