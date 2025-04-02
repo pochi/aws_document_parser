@@ -1,0 +1,37 @@
+{
+  "apiName": "GetBucketLocation",
+  "apiNameFromUrl": "GetBucketLocation",
+  "apiNameFromFile": "GetBucketLocation",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?location HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketLocation-request-header-Bucket\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketLocation_RequestSyntax\">Bucket</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The name of the bucket for which to get the location.</p>\n               <p>When you use this API operation with an access point, provide the alias of the access point in place of the bucket name.</p>\n               <p>When you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name. \nIf the Object Lambda access point alias in a request is not valid, the error code <code class=\"code\">InvalidAccessPointAliasError</code> is returned. \nFor more information about <code class=\"code\">InvalidAccessPointAliasError</code>, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#ErrorCodeList\">List of\n            Error Codes</a>.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketLocation-request-header-ExpectedBucketOwner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketLocation_RequestSyntax\">x-amz-expected-bucket-owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code <code class=\"code\">403 Forbidden</code> (access denied).</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;<a href=\"#AmazonS3-GetBucketLocation-response-GetBucketLocationOutput\">LocationConstraint</a>&gt;\n   &lt;<a href=\"#AmazonS3-GetBucketLocation-response-LocationConstraint\">LocationConstraint</a>&gt;<b><em>string</em></b>&lt;/<a href=\"#AmazonS3-GetBucketLocation-response-LocationConstraint\">LocationConstraint</a>&gt;\n&lt;/<a href=\"#AmazonS3-GetBucketLocation-response-GetBucketLocationOutput\">LocationConstraint</a>&gt;</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in XML format by the service.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketLocation-response-GetBucketLocationOutput\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketLocation_ResponseSyntax\">LocationConstraint</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Root level tag for the LocationConstraint parameters.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketLocation-response-LocationConstraint\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketLocation_ResponseSyntax\">LocationConstraint</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Specifies the Region where the bucket resides. For a list of all the Amazon S3 supported\n         location constraints by Region, see <a href=\"https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region\">Regions and Endpoints</a>.</p>\n               <p>Buckets in Region <code class=\"code\">us-east-1</code> have a LocationConstraint of\n         <code class=\"code\">null</code>. Buckets with a LocationConstraint of <code class=\"code\">EU</code> reside in <code class=\"code\">eu-west-1</code>.</p>\n               <p>Type: String</p>\n               <p>Valid Values: <code class=\"code\">af-south-1 | ap-east-1 | ap-northeast-1 | ap-northeast-2 | ap-northeast-3 | ap-south-1 | ap-south-2 | ap-southeast-1 | ap-southeast-2 | ap-southeast-3 | ap-southeast-4 | ap-southeast-5 | ca-central-1 | cn-north-1 | cn-northwest-1 | EU | eu-central-1 | eu-central-2 | eu-north-1 | eu-south-1 | eu-south-2 | eu-west-1 | eu-west-2 | eu-west-3 | il-central-1 | me-central-1 | me-south-1 | sa-east-1 | us-east-2 | us-gov-east-1 | us-gov-west-1 | us-west-1 | us-west-2</code>\n               </p>\n            </dd>\n         </dl></div>",
+  "errors": "Not found",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Simple Storage Service": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Examples": "見出し検出",
+      "Sample Request": "見出し検出",
+      "Sample Response": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

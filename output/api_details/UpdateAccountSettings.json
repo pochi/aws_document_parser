@@ -1,0 +1,32 @@
+{
+  "apiName": "UpdateAccountSettings",
+  "apiNameFromUrl": "UpdateAccountSettings",
+  "apiNameFromFile": "UpdateAccountSettings",
+  "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateAccountSettings.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-UpdateAccountSettings-request-capacityLimits\">capacityLimits</a>\": <span>{</span> \n      \"<a href=\"./API_CapacityLimits.html#opensearchserverless-Type-CapacityLimits-maxIndexingCapacityInOCU\">maxIndexingCapacityInOCU</a>\": <code class=\"replaceable\">number</code>,\n      \"<a href=\"./API_CapacityLimits.html#opensearchserverless-Type-CapacityLimits-maxSearchCapacityInOCU\">maxSearchCapacityInOCU</a>\": <code class=\"replaceable\">number</code>\n   }\n}</code></pre>",
+  "requestParameters": "<p>For information about the parameters that are common to all actions, see <a href=\"./CommonParameters.html\">Common Parameters</a>.</p><p>The request accepts the following data in JSON format.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"opensearchserverless-UpdateAccountSettings-request-capacityLimits\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_UpdateAccountSettings_RequestSyntax\">capacityLimits</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The maximum capacity limits for all OpenSearch Serverless collections, in OpenSearch Compute Units\n            (OCUs). These limits are used to scale your collections based on the current workload.\n            For more information, see <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-scaling.html\">Managing\n                capacity limits for Amazon OpenSearch Serverless</a>.</p>\n               <p>Type: <a href=\"./API_CapacityLimits.html\">CapacityLimits</a> object</p>\n               <p>Required: No</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "Not found",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-UpdateAccountSettings-response-accountSettingsDetail\">accountSettingsDetail</a>\": <span>{</span> \n      \"<a href=\"./API_AccountSettingsDetail.html#opensearchserverless-Type-AccountSettingsDetail-capacityLimits\">capacityLimits</a>\": <span>{</span> \n         \"<a href=\"./API_CapacityLimits.html#opensearchserverless-Type-CapacityLimits-maxIndexingCapacityInOCU\">maxIndexingCapacityInOCU</a>\": <b><em>number</em></b>,\n         \"<a href=\"./API_CapacityLimits.html#opensearchserverless-Type-CapacityLimits-maxSearchCapacityInOCU\">maxSearchCapacityInOCU</a>\": <b><em>number</em></b>\n      }\n   }\n}</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in JSON format by the service.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"opensearchserverless-UpdateAccountSettings-response-accountSettingsDetail\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_UpdateAccountSettings_ResponseSyntax\">accountSettingsDetail</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>OpenSearch Serverless-related settings for the current AWS account. </p>\n               <p>Type: <a href=\"./API_AccountSettingsDetail.html\">AccountSettingsDetail</a> object</p>\n            </dd>\n         </dl></div>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when an error internal to the service occurs while processing a request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when the HTTP request contains invalid input or is missing required\n            input.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Cookie の設定を選択する": "見出し検出",
+      "Cookie の設定をカスタマイズする": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Cookie の設定を保存できません": "見出し検出",
+      "Amazon OpenSearch Serverless": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "Request Parameters": "コンテンツ取得: Request Parameters",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "See Also": "見出し検出",
+      "このページの内容": "見出し検出"
+    }
+  }
+}

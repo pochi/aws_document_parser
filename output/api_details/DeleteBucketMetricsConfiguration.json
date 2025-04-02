@@ -1,0 +1,37 @@
+{
+  "apiName": "DeleteBucketMetricsConfiguration",
+  "apiNameFromUrl": "DeleteBucketMetricsConfiguration",
+  "apiNameFromFile": "DeleteBucketMetricsConfiguration",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetricsConfiguration.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?metrics&amp;id=<code class=\"replaceable\">Id</code> HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n          \n          \n      <dl>\n            <dt id=\"AmazonS3-DeleteBucketMetricsConfiguration-request-header-Bucket\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteBucketMetricsConfiguration_RequestSyntax\">Bucket</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The name of the bucket containing the metrics configuration to delete.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-DeleteBucketMetricsConfiguration-request-uri-querystring-Id\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteBucketMetricsConfiguration_RequestSyntax\">id</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The ID used to identify the metrics configuration. The ID has a 64 character limit and\n         can only contain letters, numbers, periods, dashes, and underscores.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-DeleteBucketMetricsConfiguration-request-header-ExpectedBucketOwner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteBucketMetricsConfiguration_RequestSyntax\">x-amz-expected-bucket-owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code <code class=\"code\">403 Forbidden</code> (access denied).</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs apache\" tabindex=\"0\"><span class=\"hljs-attribute\">HTTP</span>/<span class=\"hljs-number\">1</span>.<span class=\"hljs-number\">1</span> <span class=\"hljs-number\">204</span>\n</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.</p>",
+  "errors": "Not found",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Simple Storage Service": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Examples": "見出し検出",
+      "Sample Request": "見出し検出",
+      "Sample Response": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

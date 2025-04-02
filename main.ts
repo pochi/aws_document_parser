@@ -60,10 +60,12 @@ async function scrapeBedrockApiOperations(url: string): Promise<ApiOperation[]> 
 (async () => {
   try {
     const pages: Array<{ title: string, url: string }> = [
-      { title: 'bedrock', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock.html' },
-      { title: 'bedrock_runtime', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html' },
-      { title: 'agents', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock.html' },
-      { title: 'agents_runtime', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock_Runtime.html' },
+      // { title: 'bedrock', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock.html' },
+      // { title: 'bedrock_runtime', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html' },
+      // { title: 'agents', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock.html' },
+      // { title: 'agents_runtime', url: 'https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock_Runtime.html' },
+      { title: 'opensearch_serverless', url: 'https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_Operations.html' },
+      { title: 's3', url: 'https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html' }
     ];
 
     for (const page of pages) {

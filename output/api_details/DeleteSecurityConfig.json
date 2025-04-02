@@ -1,0 +1,31 @@
+{
+  "apiName": "DeleteSecurityConfig",
+  "apiNameFromUrl": "DeleteSecurityConfig",
+  "apiNameFromFile": "DeleteSecurityConfig",
+  "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteSecurityConfig.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-DeleteSecurityConfig-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-DeleteSecurityConfig-request-id\">id</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",
+  "requestParameters": "<p>For information about the parameters that are common to all actions, see <a href=\"./CommonParameters.html\">Common Parameters</a>.</p><p>The request accepts the following data in JSON format.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"opensearchserverless-DeleteSecurityConfig-request-clientToken\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteSecurityConfig_RequestSyntax\">clientToken</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Unique, case-sensitive identifier to ensure idempotency of the request.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 512.</p>\n               <p>Required: No</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-DeleteSecurityConfig-request-id\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_DeleteSecurityConfig_RequestSyntax\">id</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The security configuration identifier. For SAML the ID will be\n                <code class=\"code\">saml/&lt;accountId&gt;/&lt;idpProviderName&gt;</code>. For example,\n                <code class=\"code\">saml/123456789123/OKTADev</code>.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 1. Maximum length of 100.</p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "Not found",
+  "responseSyntax": "Not found",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.</p>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  ConflictException\n               </b>\n            </span></dt>\n            <dd>\n               <p>When creating a resource, thrown when a resource with the same name already exists\n            or is being created. When deleting a resource, thrown when the resource is not in\n            the ACTIVE or FAILED state.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when an error internal to the service occurs while processing a request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ResourceNotFoundException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when accessing or deleting a resource that does not exist.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when the HTTP request contains invalid input or is missing required\n            input.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Cookie の設定を選択する": "見出し検出",
+      "Cookie の設定をカスタマイズする": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Cookie の設定を保存できません": "見出し検出",
+      "Amazon OpenSearch Serverless": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "Request Parameters": "コンテンツ取得: Request Parameters",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "See Also": "見出し検出",
+      "このページの内容": "見出し検出"
+    }
+  }
+}

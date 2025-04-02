@@ -1,0 +1,38 @@
+{
+  "apiName": "GetBucketCors",
+  "apiNameFromUrl": "GetBucketCors",
+  "apiNameFromFile": "GetBucketCors",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketCors.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?cors HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketCors-request-header-Bucket\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketCors_RequestSyntax\">Bucket</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The bucket name for which to get the cors configuration.</p>\n               <p>When you use this API operation with an access point, provide the alias of the access point in place of the bucket name.</p>\n               <p>When you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name. \nIf the Object Lambda access point alias in a request is not valid, the error code <code class=\"code\">InvalidAccessPointAliasError</code> is returned. \nFor more information about <code class=\"code\">InvalidAccessPointAliasError</code>, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#ErrorCodeList\">List of\n            Error Codes</a>.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketCors-request-header-ExpectedBucketOwner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketCors_RequestSyntax\">x-amz-expected-bucket-owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code <code class=\"code\">403 Forbidden</code> (access denied).</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;<a href=\"#AmazonS3-GetBucketCors-response-GetBucketCorsOutput\">CORSConfiguration</a>&gt;\n   &lt;<a href=\"#AmazonS3-GetBucketCors-response-CORSRules\">CORSRule</a>&gt;\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedHeaders\">AllowedHeader</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedHeaders\">AllowedHeader</a>&gt;\n      ...\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedMethods\">AllowedMethod</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedMethods\">AllowedMethod</a>&gt;\n      ...\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedOrigins\">AllowedOrigin</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-AllowedOrigins\">AllowedOrigin</a>&gt;\n      ...\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-ExposeHeaders\">ExposeHeader</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-ExposeHeaders\">ExposeHeader</a>&gt;\n      ...\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-ID\">ID</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-ID\">ID</a>&gt;\n      &lt;<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-MaxAgeSeconds\">MaxAgeSeconds</a>&gt;<b><em>integer</em></b>&lt;/<a href=\"./API_CORSRule.html#AmazonS3-Type-CORSRule-MaxAgeSeconds\">MaxAgeSeconds</a>&gt;\n   &lt;/<a href=\"#AmazonS3-GetBucketCors-response-CORSRules\">CORSRule</a>&gt;\n   ...\n&lt;/<a href=\"#AmazonS3-GetBucketCors-response-GetBucketCorsOutput\">CORSConfiguration</a>&gt;</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in XML format by the service.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketCors-response-GetBucketCorsOutput\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketCors_ResponseSyntax\">CORSConfiguration</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Root level tag for the CORSConfiguration parameters.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketCors-response-CORSRules\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketCors_ResponseSyntax\">CORSRule</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>A set of origins and methods (cross-origin access that you want to allow). You can add\n         up to 100 rules to the configuration.</p>\n               <p>Type: Array of <a href=\"./API_CORSRule.html\">CORSRule</a> data types</p>\n            </dd>\n         </dl></div>",
+  "errors": "Not found",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Simple Storage Service": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Examples": "見出し検出",
+      "Configure CORS Sample Request": "見出し検出",
+      "Example": "見出し検出",
+      "Sample Request: Retrieve cors subresource": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

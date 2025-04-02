@@ -1,0 +1,32 @@
+{
+  "apiName": "GetAccessPolicy",
+  "apiNameFromUrl": "GetAccessPolicy",
+  "apiNameFromFile": "GetAccessPolicy",
+  "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetAccessPolicy.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-GetAccessPolicy-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-GetAccessPolicy-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",
+  "requestParameters": "<p>For information about the parameters that are common to all actions, see <a href=\"./CommonParameters.html\">Common Parameters</a>.</p><p>The request accepts the following data in JSON format.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"opensearchserverless-GetAccessPolicy-request-name\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetAccessPolicy_RequestSyntax\">name</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The name of the access policy.</p>\n               <p>Type: String</p>\n               <p>Length Constraints: Minimum length of 3. Maximum length of 32.</p>\n               <p>Pattern: <code class=\"code\">[a-z][a-z0-9-]+</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-GetAccessPolicy-request-type\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetAccessPolicy_RequestSyntax\">type</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Tye type of policy. Currently, the only supported value is <code class=\"code\">data</code>.</p>\n               <p>Type: String</p>\n               <p>Valid Values: <code class=\"code\">data</code>\n               </p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "Not found",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-GetAccessPolicy-response-accessPolicyDetail\">accessPolicyDetail</a>\": <span>{</span> \n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-createdDate\">createdDate</a>\": <b><em>number</em></b>,\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-description\">description</a>\": \"<b><em>string</em></b>\",\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-lastModifiedDate\">lastModifiedDate</a>\": <b><em>number</em></b>,\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-name\">name</a>\": \"<b><em>string</em></b>\",\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-policy\">policy</a>\": <b><em>JSON value</em></b>,\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-policyVersion\">policyVersion</a>\": \"<b><em>string</em></b>\",\n      \"<a href=\"./API_AccessPolicyDetail.html#opensearchserverless-Type-AccessPolicyDetail-type\">type</a>\": \"<b><em>string</em></b>\"\n   }\n}</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in JSON format by the service.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt id=\"opensearchserverless-GetAccessPolicy-response-accessPolicyDetail\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetAccessPolicy_ResponseSyntax\">accessPolicyDetail</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Details about the requested access policy.</p>\n               <p>Type: <a href=\"./API_AccessPolicyDetail.html\">AccessPolicyDetail</a> object</p>\n            </dd>\n         </dl></div>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n          \n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when an error internal to the service occurs while processing a request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ResourceNotFoundException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when accessing or deleting a resource that does not exist.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n          \n            <dt><span class=\"term\">\n               <b>\n                  ValidationException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when the HTTP request contains invalid input or is missing required\n            input.</p>\n               <p>HTTP Status Code: 400</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Cookie の設定を選択する": "見出し検出",
+      "Cookie の設定をカスタマイズする": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Cookie の設定を保存できません": "見出し検出",
+      "Amazon OpenSearch Serverless": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "Request Parameters": "コンテンツ取得: Request Parameters",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "See Also": "見出し検出",
+      "このページの内容": "見出し検出"
+    }
+  }
+}

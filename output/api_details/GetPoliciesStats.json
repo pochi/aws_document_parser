@@ -1,0 +1,30 @@
+{
+  "apiName": "GetPoliciesStats",
+  "apiNameFromUrl": "GetPoliciesStats",
+  "apiNameFromFile": "GetPoliciesStats",
+  "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetPoliciesStats.html",
+  "requestSyntax": "Not found",
+  "requestParameters": "Not found",
+  "requestBody": "Not found",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-GetPoliciesStats-response-AccessPolicyStats\">AccessPolicyStats</a>\": <span>{</span> \n      \"<a href=\"./API_AccessPolicyStats.html#opensearchserverless-Type-AccessPolicyStats-DataPolicyCount\">DataPolicyCount</a>\": <b><em>number</em></b>\n   },\n   \"<a href=\"#opensearchserverless-GetPoliciesStats-response-LifecyclePolicyStats\">LifecyclePolicyStats</a>\": <span>{</span> \n      \"<a href=\"./API_LifecyclePolicyStats.html#opensearchserverless-Type-LifecyclePolicyStats-RetentionPolicyCount\">RetentionPolicyCount</a>\": <b><em>number</em></b>\n   },\n   \"<a href=\"#opensearchserverless-GetPoliciesStats-response-SecurityConfigStats\">SecurityConfigStats</a>\": <span>{</span> \n      \"<a href=\"./API_SecurityConfigStats.html#opensearchserverless-Type-SecurityConfigStats-SamlConfigCount\">SamlConfigCount</a>\": <b><em>number</em></b>\n   },\n   \"<a href=\"#opensearchserverless-GetPoliciesStats-response-SecurityPolicyStats\">SecurityPolicyStats</a>\": <span>{</span> \n      \"<a href=\"./API_SecurityPolicyStats.html#opensearchserverless-Type-SecurityPolicyStats-EncryptionPolicyCount\">EncryptionPolicyCount</a>\": <b><em>number</em></b>,\n      \"<a href=\"./API_SecurityPolicyStats.html#opensearchserverless-Type-SecurityPolicyStats-NetworkPolicyCount\">NetworkPolicyCount</a>\": <b><em>number</em></b>\n   },\n   \"<a href=\"#opensearchserverless-GetPoliciesStats-response-TotalPolicyCount\">TotalPolicyCount</a>\": <b><em>number</em></b>\n}</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in JSON format by the service.</p><div class=\"variablelist\">\n          \n          \n          \n          \n          \n      <dl>\n            <dt id=\"opensearchserverless-GetPoliciesStats-response-AccessPolicyStats\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetPoliciesStats_ResponseSyntax\">AccessPolicyStats</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Information about the data access policies in your account.</p>\n               <p>Type: <a href=\"./API_AccessPolicyStats.html\">AccessPolicyStats</a> object</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-GetPoliciesStats-response-LifecyclePolicyStats\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetPoliciesStats_ResponseSyntax\">LifecyclePolicyStats</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Information about the lifecycle policies in your account.</p>\n               <p>Type: <a href=\"./API_LifecyclePolicyStats.html\">LifecyclePolicyStats</a> object</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-GetPoliciesStats-response-SecurityConfigStats\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetPoliciesStats_ResponseSyntax\">SecurityConfigStats</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Information about the security configurations in your account.</p>\n               <p>Type: <a href=\"./API_SecurityConfigStats.html\">SecurityConfigStats</a> object</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-GetPoliciesStats-response-SecurityPolicyStats\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetPoliciesStats_ResponseSyntax\">SecurityPolicyStats</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Information about the security policies in your account.</p>\n               <p>Type: <a href=\"./API_SecurityPolicyStats.html\">SecurityPolicyStats</a> object</p>\n            </dd>\n          \n            <dt id=\"opensearchserverless-GetPoliciesStats-response-TotalPolicyCount\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetPoliciesStats_ResponseSyntax\">TotalPolicyCount</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The total number of OpenSearch Serverless security policies and configurations in your\n            account.</p>\n               <p>Type: Long</p>\n            </dd>\n         </dl></div>",
+  "errors": "<p>For information about the errors that are common to all actions, see <a href=\"./CommonErrors.html\">Common Errors</a>.</p><div class=\"variablelist\">\n          \n      <dl>\n            <dt><span class=\"term\">\n               <b>\n                  InternalServerException\n               </b>\n            </span></dt>\n            <dd>\n               <p>Thrown when an error internal to the service occurs while processing a request.</p>\n               <p>HTTP Status Code: 500</p>\n            </dd>\n         </dl></div>",
+  "debugInfo": {
+    "rawSections": {
+      "Cookie の設定を選択する": "見出し検出",
+      "Cookie の設定をカスタマイズする": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Cookie の設定を保存できません": "見出し検出",
+      "Amazon OpenSearch Serverless": "見出し検出",
+      "API Reference": "見出し検出",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Errors": "コンテンツ取得: Errors",
+      "See Also": "見出し検出",
+      "このページの内容": "見出し検出"
+    }
+  }
+}

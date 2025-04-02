@@ -1,0 +1,37 @@
+{
+  "apiName": "GetBucketAcl",
+  "apiNameFromUrl": "GetBucketAcl",
+  "apiNameFromFile": "GetBucketAcl",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAcl.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?acl HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketAcl-request-header-Bucket\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketAcl_RequestSyntax\">Bucket</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Specifies the S3 bucket whose ACL is being requested.</p>\n               <p>When you use this API operation with an access point, provide the alias of the access point in place of the bucket name.</p>\n               <p>When you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name. \nIf the Object Lambda access point alias in a request is not valid, the error code <code class=\"code\">InvalidAccessPointAliasError</code> is returned. \nFor more information about <code class=\"code\">InvalidAccessPointAliasError</code>, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#ErrorCodeList\">List of\n            Error Codes</a>.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketAcl-request-header-ExpectedBucketOwner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketAcl_RequestSyntax\">x-amz-expected-bucket-owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code <code class=\"code\">403 Forbidden</code> (access denied).</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request does not have a request body.</p>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">HTTP/1.1 200\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;<a href=\"#AmazonS3-GetBucketAcl-response-GetBucketAclOutput\">AccessControlPolicy</a>&gt;\n   &lt;<a href=\"#AmazonS3-GetBucketAcl-response-Owner\">Owner</a>&gt;\n      &lt;<a href=\"./API_Owner.html#AmazonS3-Type-Owner-DisplayName\">DisplayName</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Owner.html#AmazonS3-Type-Owner-DisplayName\">DisplayName</a>&gt;\n      &lt;<a href=\"./API_Owner.html#AmazonS3-Type-Owner-ID\">ID</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Owner.html#AmazonS3-Type-Owner-ID\">ID</a>&gt;\n   &lt;/<a href=\"#AmazonS3-GetBucketAcl-response-Owner\">Owner</a>&gt;\n   &lt;<a href=\"#AmazonS3-GetBucketAcl-response-Grants\">AccessControlList</a>&gt;\n      &lt;Grant&gt;\n         &lt;<a href=\"./API_Grant.html#AmazonS3-Type-Grant-Grantee\">Grantee</a>&gt;\n            &lt;<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-DisplayName\">DisplayName</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-DisplayName\">DisplayName</a>&gt;\n            &lt;<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-EmailAddress\">EmailAddress</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-EmailAddress\">EmailAddress</a>&gt;\n            &lt;<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-ID\">ID</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-ID\">ID</a>&gt;\n            &lt;<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-Type\">xsi:type</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-Type\">xsi:type</a>&gt;\n            &lt;<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-URI\">URI</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grantee.html#AmazonS3-Type-Grantee-URI\">URI</a>&gt;\n         &lt;/<a href=\"./API_Grant.html#AmazonS3-Type-Grant-Grantee\">Grantee</a>&gt;\n         &lt;<a href=\"./API_Grant.html#AmazonS3-Type-Grant-Permission\">Permission</a>&gt;<b><em>string</em></b>&lt;/<a href=\"./API_Grant.html#AmazonS3-Type-Grant-Permission\">Permission</a>&gt;\n      &lt;/Grant&gt;\n   &lt;/<a href=\"#AmazonS3-GetBucketAcl-response-Grants\">AccessControlList</a>&gt;\n&lt;/<a href=\"#AmazonS3-GetBucketAcl-response-GetBucketAclOutput\">AccessControlPolicy</a>&gt;</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response.</p><p>The following data is returned in XML format by the service.</p><div class=\"variablelist\">\n          \n          \n          \n      <dl>\n            <dt id=\"AmazonS3-GetBucketAcl-response-GetBucketAclOutput\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketAcl_ResponseSyntax\">AccessControlPolicy</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Root level tag for the AccessControlPolicy parameters.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketAcl-response-Grants\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketAcl_ResponseSyntax\">Grants</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>A list of grants.</p>\n               <p>Type: Array of <a href=\"./API_Grant.html\">Grant</a> data types</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-GetBucketAcl-response-Owner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_GetBucketAcl_ResponseSyntax\">Owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Container for the bucket owner's display name and ID.</p>\n               <p>Type: <a href=\"./API_Owner.html\">Owner</a> data type</p>\n            </dd>\n         </dl></div>",
+  "errors": "Not found",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Simple Storage Service": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Examples": "見出し検出",
+      "Sample Request": "見出し検出",
+      "Sample Response": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

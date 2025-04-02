@@ -6,6 +6,7 @@
   },
   "scripts": {
     "fetch_api_list": "ts-node main.ts",
-    "fetch_api_detail": "ts-node fetch_api_detail.ts"
+    "fetch_api_detail": "ts-node fetch_api_detail.ts",
+    "create_csv_details": "ts-node create_csv_details.ts"
   }
 }

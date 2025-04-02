@@ -1,0 +1,150 @@
+[
+  {
+    "name": "BatchGetCollection",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_BatchGetCollection.html"
+  },
+  {
+    "name": "BatchGetEffectiveLifecyclePolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_BatchGetEffectiveLifecyclePolicy.html"
+  },
+  {
+    "name": "BatchGetLifecyclePolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_BatchGetLifecyclePolicy.html"
+  },
+  {
+    "name": "BatchGetVpcEndpoint",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_BatchGetVpcEndpoint.html"
+  },
+  {
+    "name": "CreateAccessPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateAccessPolicy.html"
+  },
+  {
+    "name": "CreateCollection",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateCollection.html"
+  },
+  {
+    "name": "CreateLifecyclePolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateLifecyclePolicy.html"
+  },
+  {
+    "name": "CreateSecurityConfig",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateSecurityConfig.html"
+  },
+  {
+    "name": "CreateSecurityPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateSecurityPolicy.html"
+  },
+  {
+    "name": "CreateVpcEndpoint",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateVpcEndpoint.html"
+  },
+  {
+    "name": "DeleteAccessPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteAccessPolicy.html"
+  },
+  {
+    "name": "DeleteCollection",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteCollection.html"
+  },
+  {
+    "name": "DeleteLifecyclePolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteLifecyclePolicy.html"
+  },
+  {
+    "name": "DeleteSecurityConfig",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteSecurityConfig.html"
+  },
+  {
+    "name": "DeleteSecurityPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteSecurityPolicy.html"
+  },
+  {
+    "name": "DeleteVpcEndpoint",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteVpcEndpoint.html"
+  },
+  {
+    "name": "GetAccessPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetAccessPolicy.html"
+  },
+  {
+    "name": "GetAccountSettings",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetAccountSettings.html"
+  },
+  {
+    "name": "GetPoliciesStats",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetPoliciesStats.html"
+  },
+  {
+    "name": "GetSecurityConfig",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetSecurityConfig.html"
+  },
+  {
+    "name": "GetSecurityPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetSecurityPolicy.html"
+  },
+  {
+    "name": "ListAccessPolicies",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListAccessPolicies.html"
+  },
+  {
+    "name": "ListCollections",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListCollections.html"
+  },
+  {
+    "name": "ListLifecyclePolicies",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListLifecyclePolicies.html"
+  },
+  {
+    "name": "ListSecurityConfigs",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListSecurityConfigs.html"
+  },
+  {
+    "name": "ListSecurityPolicies",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListSecurityPolicies.html"
+  },
+  {
+    "name": "ListTagsForResource",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListTagsForResource.html"
+  },
+  {
+    "name": "ListVpcEndpoints",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_ListVpcEndpoints.html"
+  },
+  {
+    "name": "TagResource",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_TagResource.html"
+  },
+  {
+    "name": "UntagResource",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UntagResource.html"
+  },
+  {
+    "name": "UpdateAccessPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateAccessPolicy.html"
+  },
+  {
+    "name": "UpdateAccountSettings",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateAccountSettings.html"
+  },
+  {
+    "name": "UpdateCollection",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateCollection.html"
+  },
+  {
+    "name": "UpdateLifecyclePolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateLifecyclePolicy.html"
+  },
+  {
+    "name": "UpdateSecurityConfig",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateSecurityConfig.html"
+  },
+  {
+    "name": "UpdateSecurityPolicy",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateSecurityPolicy.html"
+  },
+  {
+    "name": "UpdateVpcEndpoint",
+    "link": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateVpcEndpoint.html"
+  }
+]

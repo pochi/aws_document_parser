@@ -1,0 +1,41 @@
+{
+  "apiName": "PutBucketOwnershipControls",
+  "apiNameFromUrl": "PutBucketOwnershipControls",
+  "apiNameFromFile": "PutBucketOwnershipControls",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketOwnershipControls.html",
+  "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /?ownershipControls HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nContent-MD5: <code class=\"replaceable\">ContentMD5</code>\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;<a href=\"#AmazonS3-PutBucketOwnershipControls-request-OwnershipControls\">OwnershipControls</a> xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"&gt;\n   &lt;<a href=\"#AmazonS3-PutBucketOwnershipControls-request-Rules\">Rule</a>&gt;\n      &lt;<a href=\"./API_OwnershipControlsRule.html#AmazonS3-Type-OwnershipControlsRule-ObjectOwnership\">ObjectOwnership</a>&gt;<code class=\"replaceable\">string</code>&lt;/<a href=\"./API_OwnershipControlsRule.html#AmazonS3-Type-OwnershipControlsRule-ObjectOwnership\">ObjectOwnership</a>&gt;\n   &lt;/<a href=\"#AmazonS3-PutBucketOwnershipControls-request-Rules\">Rule</a>&gt;\n   ...\n&lt;/<a href=\"#AmazonS3-PutBucketOwnershipControls-request-OwnershipControls\">OwnershipControls</a>&gt;</code></pre>",
+  "requestParameters": "<p>The request uses the following URI parameters.</p><div class=\"variablelist\">\n          \n          \n          \n      <dl>\n            <dt id=\"AmazonS3-PutBucketOwnershipControls-request-header-Bucket\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_PutBucketOwnershipControls_RequestSyntax\">Bucket</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The name of the Amazon S3 bucket whose <code class=\"code\">OwnershipControls</code> you want to set.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-PutBucketOwnershipControls-request-header-ContentMD5\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_PutBucketOwnershipControls_RequestSyntax\">Content-MD5</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The MD5 hash of the <code class=\"code\">OwnershipControls</code> request body. </p>\n               <p>For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-PutBucketOwnershipControls-request-header-ExpectedBucketOwner\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_PutBucketOwnershipControls_RequestSyntax\">x-amz-expected-bucket-owner</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code <code class=\"code\">403 Forbidden</code> (access denied).</p>\n            </dd>\n         </dl></div>",
+  "requestBody": "<p>The request accepts the following data in XML format.</p><div class=\"variablelist\">\n          \n          \n      <dl>\n            <dt id=\"AmazonS3-PutBucketOwnershipControls-request-OwnershipControls\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_PutBucketOwnershipControls_RequestSyntax\">OwnershipControls</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>Root level tag for the OwnershipControls parameters.</p>\n               <p>Required: Yes</p>\n            </dd>\n          \n            <dt id=\"AmazonS3-PutBucketOwnershipControls-request-Rules\"><span class=\"term\">\n               <b>\n                  <a href=\"#API_PutBucketOwnershipControls_RequestSyntax\">Rule</a>\n               </b>\n            </span></dt>\n            <dd>\n               <p>The container element for an ownership control rule.</p>\n               <p>Type: Array of <a href=\"./API_OwnershipControlsRule.html\">OwnershipControlsRule</a> data types</p>\n               <p>Required: Yes</p>\n            </dd>\n         </dl></div>",
+  "responseSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs apache\" tabindex=\"0\"><span class=\"hljs-attribute\">HTTP</span>/<span class=\"hljs-number\">1</span>.<span class=\"hljs-number\">1</span> <span class=\"hljs-number\">200</span>\n</code></pre>",
+  "responseElements": "<p>If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.</p>",
+  "errors": "Not found",
+  "debugInfo": {
+    "rawSections": {
+      "Select your cookie preferences": "見出し検出",
+      "Customize cookie preferences": "見出し検出",
+      "Essential": "見出し検出",
+      "Performance": "見出し検出",
+      "Functional": "見出し検出",
+      "Advertising": "見出し検出",
+      "Unable to save cookie preferences": "見出し検出",
+      "Amazon Simple Storage Service": "見出し検出",
+      "API Reference": "見出し検出",
+      "Request Syntax": "コンテンツ取得: Request Syntax",
+      "URI Request Parameters": "コンテンツ取得: Request Parameters",
+      "Request Body": "コンテンツ取得: Request Body",
+      "Response Syntax": "コンテンツ取得: Response Syntax",
+      "Response Elements": "コンテンツ取得: Response Elements",
+      "Examples": "見出し検出",
+      "Sample Request with BucketOwnerEnforced OwnershipControls": "見出し検出",
+      "Sample Response with BucketOwnerEnforced OwnershipControls": "見出し検出",
+      "Sample Request with BucketOwnerPreferred OwnershipControls": "見出し検出",
+      "Sample Response with BucketOwnerPreferred OwnershipControls": "見出し検出",
+      "Sample Request with ObjectWriter OwnershipControls": "見出し検出",
+      "Sample Response with ObjectWriter OwnershipControls": "見出し検出",
+      "See Also": "見出し検出",
+      "Discover highly rated pages": "見出し検出",
+      "On this page": "見出し検出",
+      "Introducing Amazon Q": "見出し検出"
+    }
+  }
+}

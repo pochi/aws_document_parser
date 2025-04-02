@@ -1,0 +1,410 @@
+[
+  {
+    "name": "AbortMultipartUpload",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html"
+  },
+  {
+    "name": "CompleteMultipartUpload",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html"
+  },
+  {
+    "name": "CopyObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html"
+  },
+  {
+    "name": "CreateBucket",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html"
+  },
+  {
+    "name": "CreateBucketMetadataTableConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataTableConfiguration.html"
+  },
+  {
+    "name": "CreateMultipartUpload",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html"
+  },
+  {
+    "name": "CreateSession",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html"
+  },
+  {
+    "name": "DeleteBucket",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html"
+  },
+  {
+    "name": "DeleteBucketAnalyticsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketAnalyticsConfiguration.html"
+  },
+  {
+    "name": "DeleteBucketCors",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketCors.html"
+  },
+  {
+    "name": "DeleteBucketEncryption",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncryption.html"
+  },
+  {
+    "name": "DeleteBucketIntelligentTieringConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketIntelligentTieringConfiguration.html"
+  },
+  {
+    "name": "DeleteBucketInventoryConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketInventoryConfiguration.html"
+  },
+  {
+    "name": "DeleteBucketLifecycle",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html"
+  },
+  {
+    "name": "DeleteBucketMetadataTableConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetadataTableConfiguration.html"
+  },
+  {
+    "name": "DeleteBucketMetricsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetricsConfiguration.html"
+  },
+  {
+    "name": "DeleteBucketOwnershipControls",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketOwnershipControls.html"
+  },
+  {
+    "name": "DeleteBucketPolicy",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketPolicy.html"
+  },
+  {
+    "name": "DeleteBucketReplication",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html"
+  },
+  {
+    "name": "DeleteBucketTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html"
+  },
+  {
+    "name": "DeleteBucketWebsite",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketWebsite.html"
+  },
+  {
+    "name": "DeleteObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html"
+  },
+  {
+    "name": "DeleteObjects",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html"
+  },
+  {
+    "name": "DeleteObjectTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html"
+  },
+  {
+    "name": "DeletePublicAccessBlock",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html"
+  },
+  {
+    "name": "GetBucketAccelerateConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAccelerateConfiguration.html"
+  },
+  {
+    "name": "GetBucketAcl",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAcl.html"
+  },
+  {
+    "name": "GetBucketAnalyticsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAnalyticsConfiguration.html"
+  },
+  {
+    "name": "GetBucketCors",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketCors.html"
+  },
+  {
+    "name": "GetBucketEncryption",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html"
+  },
+  {
+    "name": "GetBucketIntelligentTieringConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketIntelligentTieringConfiguration.html"
+  },
+  {
+    "name": "GetBucketInventoryConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketInventoryConfiguration.html"
+  },
+  {
+    "name": "GetBucketLifecycle",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycle.html"
+  },
+  {
+    "name": "GetBucketLifecycleConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html"
+  },
+  {
+    "name": "GetBucketLocation",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html"
+  },
+  {
+    "name": "GetBucketLogging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLogging.html"
+  },
+  {
+    "name": "GetBucketMetadataTableConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html"
+  },
+  {
+    "name": "GetBucketMetricsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetricsConfiguration.html"
+  },
+  {
+    "name": "GetBucketNotification",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotification.html"
+  },
+  {
+    "name": "GetBucketNotificationConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html"
+  },
+  {
+    "name": "GetBucketOwnershipControls",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketOwnershipControls.html"
+  },
+  {
+    "name": "GetBucketPolicy",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html"
+  },
+  {
+    "name": "GetBucketPolicyStatus",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html"
+  },
+  {
+    "name": "GetBucketReplication",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html"
+  },
+  {
+    "name": "GetBucketRequestPayment",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequestPayment.html"
+  },
+  {
+    "name": "GetBucketTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketTagging.html"
+  },
+  {
+    "name": "GetBucketVersioning",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html"
+  },
+  {
+    "name": "GetBucketWebsite",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketWebsite.html"
+  },
+  {
+    "name": "GetObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html"
+  },
+  {
+    "name": "GetObjectAcl",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html"
+  },
+  {
+    "name": "GetObjectAttributes",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAttributes.html"
+  },
+  {
+    "name": "GetObjectLegalHold",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLegalHold.html"
+  },
+  {
+    "name": "GetObjectLockConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLockConfiguration.html"
+  },
+  {
+    "name": "GetObjectRetention",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectRetention.html"
+  },
+  {
+    "name": "GetObjectTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTagging.html"
+  },
+  {
+    "name": "GetObjectTorrent",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html"
+  },
+  {
+    "name": "GetPublicAccessBlock",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetPublicAccessBlock.html"
+  },
+  {
+    "name": "HeadBucket",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html"
+  },
+  {
+    "name": "HeadObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html"
+  },
+  {
+    "name": "ListBucketAnalyticsConfigurations",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketAnalyticsConfigurations.html"
+  },
+  {
+    "name": "ListBucketIntelligentTieringConfigurations",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketIntelligentTieringConfigurations.html"
+  },
+  {
+    "name": "ListBucketInventoryConfigurations",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketInventoryConfigurations.html"
+  },
+  {
+    "name": "ListBucketMetricsConfigurations",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketMetricsConfigurations.html"
+  },
+  {
+    "name": "ListBuckets",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html"
+  },
+  {
+    "name": "ListDirectoryBuckets",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListDirectoryBuckets.html"
+  },
+  {
+    "name": "ListMultipartUploads",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html"
+  },
+  {
+    "name": "ListObjects",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html"
+  },
+  {
+    "name": "ListObjectsV2",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html"
+  },
+  {
+    "name": "ListObjectVersions",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html"
+  },
+  {
+    "name": "ListParts",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html"
+  },
+  {
+    "name": "PutBucketAccelerateConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html"
+  },
+  {
+    "name": "PutBucketAcl",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAcl.html"
+  },
+  {
+    "name": "PutBucketAnalyticsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAnalyticsConfiguration.html"
+  },
+  {
+    "name": "PutBucketCors",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketCors.html"
+  },
+  {
+    "name": "PutBucketEncryption",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html"
+  },
+  {
+    "name": "PutBucketIntelligentTieringConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketIntelligentTieringConfiguration.html"
+  },
+  {
+    "name": "PutBucketInventoryConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html"
+  },
+  {
+    "name": "PutBucketLifecycle",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycle.html"
+  },
+  {
+    "name": "PutBucketLifecycleConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html"
+  },
+  {
+    "name": "PutBucketLogging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLogging.html"
+  },
+  {
+    "name": "PutBucketMetricsConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketMetricsConfiguration.html"
+  },
+  {
+    "name": "PutBucketNotification",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotification.html"
+  },
+  {
+    "name": "PutBucketNotificationConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html"
+  },
+  {
+    "name": "PutBucketOwnershipControls",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketOwnershipControls.html"
+  },
+  {
+    "name": "PutBucketPolicy",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html"
+  },
+  {
+    "name": "PutBucketReplication",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html"
+  },
+  {
+    "name": "PutBucketRequestPayment",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketRequestPayment.html"
+  },
+  {
+    "name": "PutBucketTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketTagging.html"
+  },
+  {
+    "name": "PutBucketVersioning",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketVersioning.html"
+  },
+  {
+    "name": "PutBucketWebsite",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketWebsite.html"
+  },
+  {
+    "name": "PutObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html"
+  },
+  {
+    "name": "PutObjectAcl",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html"
+  },
+  {
+    "name": "PutObjectLegalHold",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html"
+  },
+  {
+    "name": "PutObjectLockConfiguration",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html"
+  },
+  {
+    "name": "PutObjectRetention",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html"
+  },
+  {
+    "name": "PutObjectTagging",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html"
+  },
+  {
+    "name": "PutPublicAccessBlock",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutPublicAccessBlock.html"
+  },
+  {
+    "name": "RestoreObject",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html"
+  },
+  {
+    "name": "SelectObjectContent",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html"
+  },
+  {
+    "name": "UploadPart",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html"
+  },
+  {
+    "name": "UploadPartCopy",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html"
+  },
+  {
+    "name": "WriteGetObjectResponse",
+    "link": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_WriteGetObjectResponse.html"
+  }
+]
