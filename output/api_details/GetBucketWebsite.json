@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketWebsite",
   "apiNameFromUrl": "GetBucketWebsite",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the website configuration for a bucket. To host website on Amazon S3, you can\n         configure a bucket as website by adding a website configuration. For more information about\n         hosting websites, see Hosting Websites on Amazon S3.\n\nThis GET action requires the S3:GetBucketWebsite permission. By default,\n         only the bucket owner can read the bucket website configuration. However, bucket owners can\n         allow other users to read the website configuration by writing a bucket policy granting\n         them the S3:GetBucketWebsite permission.\n\nThe following operations are related to GetBucketWebsite:\n\nDeleteBucketWebsite\n         \n      \n         \n            PutBucketWebsite",
   "apiNameFromFile": "GetBucketWebsite",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketWebsite.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?website HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

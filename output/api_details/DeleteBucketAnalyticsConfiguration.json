@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteBucketAnalyticsConfiguration",
   "apiNameFromUrl": "DeleteBucketAnalyticsConfiguration",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nDeletes an analytics configuration for the bucket (specified by the analytics\n         configuration ID).\n\nTo use this operation, you must have permissions to perform the\n            s3:PutAnalyticsConfiguration action. The bucket owner has this permission\n         by default. The bucket owner can grant this permission to others. For more information\n         about permissions, see Permissions Related to Bucket Subresource Operations and Managing\n            Access Permissions to Your Amazon S3 Resources.\n\nFor information about the Amazon S3 analytics feature, see Amazon S3 Analytics – Storage Class\n            Analysis.\n\nThe following operations are related to\n         DeleteBucketAnalyticsConfiguration:\n\nGetBucketAnalyticsConfiguration\n         \n      \n         \n            ListBucketAnalyticsConfigurations\n         \n      \n         \n            PutBucketAnalyticsConfiguration",
   "apiNameFromFile": "DeleteBucketAnalyticsConfiguration",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketAnalyticsConfiguration.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?analytics&amp;id=<code class=\"replaceable\">Id</code> HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

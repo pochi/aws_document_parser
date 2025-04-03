@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetAgent",
-  "apiNameFromUrl": "agent_GetAgent",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetAgent",
+  "apiNameFromUrl": "GetAgent",
+  "description": "Gets information about an agent.",
   "apiNameFromFile": "agent_GetAgent",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgent.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /agents/<code class=\"replaceable\">agentId</code>/ HTTP/1.1\n</code></pre>",

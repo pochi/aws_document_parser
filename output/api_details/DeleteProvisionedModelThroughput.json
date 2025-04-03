@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeleteProvisionedModelThroughput",
   "apiNameFromUrl": "DeleteProvisionedModelThroughput",
+  "description": "Deletes a Provisioned Throughput. You can't delete a Provisioned Throughput before the commitment term is over. For more information, see Provisioned Throughput in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "DeleteProvisionedModelThroughput",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteProvisionedModelThroughput.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /provisioned-model-throughput/<code class=\"replaceable\">provisionedModelId</code> HTTP/1.1\n</code></pre>",

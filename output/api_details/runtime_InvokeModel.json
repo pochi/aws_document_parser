@@ -1,6 +1,8 @@
 {
-  "apiName": "runtime_InvokeModel",
-  "apiNameFromUrl": "runtime_InvokeModel",
+  "serviceName": "bedrock_runtime",
+  "apiName": "InvokeModel",
+  "apiNameFromUrl": "InvokeModel",
+  "description": "Invokes the specified Amazon Bedrock model to run inference using the prompt and inference parameters provided in the request body. \n         You use model inference to generate text, images, and embeddings.\n\nFor example code, see \n         Invoke model code examples.\n\nThis operation requires permission for the bedrock:InvokeModel action.\n\nImportantTo deny all inference access to resources that you specify in the modelId field, you\n         need to deny access to the bedrock:InvokeModel and\n            bedrock:InvokeModelWithResponseStream actions. Doing this also denies\n         access to the resource through the Converse API actions (Converse and ConverseStream). For more information see Deny access for inference on specific models.\n\nFor troubleshooting some of the common errors you might encounter when using the InvokeModel API, \n         see Troubleshooting Amazon Bedrock API Error Codes in the Amazon Bedrock User Guide",
   "apiNameFromFile": "runtime_InvokeModel",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /model/<code class=\"replaceable\">modelId</code>/invoke HTTP/1.1\nAccept: <code class=\"replaceable\">accept</code>\nContent-Type: <code class=\"replaceable\">contentType</code>\nX-Amzn-Bedrock-GuardrailIdentifier: <code class=\"replaceable\">guardrailIdentifier</code>\nX-Amzn-Bedrock-GuardrailVersion: <code class=\"replaceable\">guardrailVersion</code>\nX-Amzn-Bedrock-PerformanceConfig-Latency: <code class=\"replaceable\">performanceConfigLatency</code>\nX-Amzn-Bedrock-Trace: <code class=\"replaceable\">trace</code>\n\n<code class=\"replaceable\">body</code></code></pre>",

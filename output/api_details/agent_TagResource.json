@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_TagResource",
-  "apiNameFromUrl": "agent_TagResource",
+  "serviceName": "bedrock_agent",
+  "apiName": "TagResource",
+  "apiNameFromUrl": "TagResource",
+  "description": "Associate tags with a resource. For more information, see  Tagging resources in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_TagResource",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_TagResource.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /tags/<code class=\"replaceable\">resourceArn</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_TagResource-request-tags\">tags</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",

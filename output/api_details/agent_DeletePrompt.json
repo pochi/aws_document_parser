@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeletePrompt",
-  "apiNameFromUrl": "agent_DeletePrompt",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeletePrompt",
+  "apiNameFromUrl": "DeletePrompt",
+  "description": "Deletes a prompt or a version of it, depending on whether you include the promptVersion field or not. For more information, see Delete prompts from the Prompt management tool and Delete a version of a prompt from the Prompt management tool in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_DeletePrompt",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeletePrompt.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /prompts/<code class=\"replaceable\">promptIdentifier</code>/?promptVersion=<code class=\"replaceable\">promptVersion</code> HTTP/1.1\n</code></pre>",

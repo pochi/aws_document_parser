@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_OptimizePrompt",
-  "apiNameFromUrl": "agent-runtime_OptimizePrompt",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "OptimizePrompt",
+  "apiNameFromUrl": "OptimizePrompt",
+  "description": "Optimizes a prompt for the task that you specify. For more information, see Optimize a prompt in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent-runtime_OptimizePrompt",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_OptimizePrompt.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /optimize-prompt HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_OptimizePrompt-request-input\">input</a>\": <span>{</span> ... },\n   \"<a href=\"#bedrock-agent-runtime_OptimizePrompt-request-targetModelId\">targetModelId</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

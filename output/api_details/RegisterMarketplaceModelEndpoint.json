@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "RegisterMarketplaceModelEndpoint",
   "apiNameFromUrl": "RegisterMarketplaceModelEndpoint",
+  "description": "Registers an existing Amazon SageMaker endpoint with Amazon Bedrock Marketplace, allowing it to be used with\n            Amazon Bedrock APIs.",
   "apiNameFromFile": "RegisterMarketplaceModelEndpoint",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RegisterMarketplaceModelEndpoint.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /marketplace-model/endpoints/<code class=\"replaceable\">endpointIdentifier</code>/registration HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-RegisterMarketplaceModelEndpoint-request-modelSourceIdentifier\">modelSourceIdentifier</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

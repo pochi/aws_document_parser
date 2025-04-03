@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "GetModelCopyJob",
   "apiNameFromUrl": "GetModelCopyJob",
+  "description": "Retrieves information about a model copy job. For more information, see Copy models to be used in other regions in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "GetModelCopyJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelCopyJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /model-copy-jobs/<code class=\"replaceable\">jobArn</code> HTTP/1.1\n</code></pre>",

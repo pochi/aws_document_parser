@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListFoundationModels",
   "apiNameFromUrl": "ListFoundationModels",
+  "description": "Lists Amazon Bedrock foundation models that you can use. You can filter the results with the request parameters. For more information, see Foundation models in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "ListFoundationModels",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListFoundationModels.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /foundation-models?byCustomizationType=<code class=\"replaceable\">byCustomizationType</code>&amp;byInferenceType=<code class=\"replaceable\">byInferenceType</code>&amp;byOutputModality=<code class=\"replaceable\">byOutputModality</code>&amp;byProvider=<code class=\"replaceable\">byProvider</code> HTTP/1.1\n</code></pre>",

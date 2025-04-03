@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketPolicyStatus",
   "apiNameFromUrl": "GetBucketPolicyStatus",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nRetrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.\n         In order to use this operation, you must have the s3:GetBucketPolicyStatus\n         permission. For more information about Amazon S3 permissions, see Specifying Permissions in a\n            Policy.\n\nFor more information about when Amazon S3 considers a bucket public, see The Meaning of \"Public\".\n\nThe following operations are related to GetBucketPolicyStatus:\n\nUsing Amazon S3 Block\n                  Public Access\n         \n      \n         \n            GetPublicAccessBlock\n         \n      \n         \n            PutPublicAccessBlock\n         \n      \n         \n            DeletePublicAccessBlock",
   "apiNameFromFile": "GetBucketPolicyStatus",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?policyStatus HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

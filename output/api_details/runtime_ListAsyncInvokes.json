@@ -1,6 +1,8 @@
 {
-  "apiName": "runtime_ListAsyncInvokes",
-  "apiNameFromUrl": "runtime_ListAsyncInvokes",
+  "serviceName": "bedrock_runtime",
+  "apiName": "ListAsyncInvokes",
+  "apiNameFromUrl": "ListAsyncInvokes",
+  "description": "Lists asynchronous invocations.",
   "apiNameFromFile": "runtime_ListAsyncInvokes",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ListAsyncInvokes.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /async-invoke?maxResults=<code class=\"replaceable\">maxResults</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code>&amp;sortBy=<code class=\"replaceable\">sortBy</code>&amp;sortOrder=<code class=\"replaceable\">sortOrder</code>&amp;statusEquals=<code class=\"replaceable\">statusEquals</code>&amp;submitTimeAfter=<code class=\"replaceable\">submitTimeAfter</code>&amp;submitTimeBefore=<code class=\"replaceable\">submitTimeBefore</code> HTTP/1.1\n</code></pre>",

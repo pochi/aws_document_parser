@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetKnowledgeBaseDocuments",
-  "apiNameFromUrl": "agent_GetKnowledgeBaseDocuments",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetKnowledgeBaseDocuments",
+  "apiNameFromUrl": "GetKnowledgeBaseDocuments",
+  "description": "Retrieves specific documents from a data source that is connected to a knowledge base. For more information, see Ingest changes directly into a knowledge base in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_GetKnowledgeBaseDocuments",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBaseDocuments.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/datasources/<code class=\"replaceable\">dataSourceId</code>/documents/getDocuments HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_GetKnowledgeBaseDocuments-request-documentIdentifiers\">documentIdentifiers</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_agent_DocumentIdentifier.html#bedrock-Type-agent_DocumentIdentifier-custom\">custom</a>\": <span>{</span> \n            \"<a href=\"./API_agent_CustomDocumentIdentifier.html#bedrock-Type-agent_CustomDocumentIdentifier-id\">id</a>\": \"<code class=\"replaceable\">string</code>\"\n         },\n         \"<a href=\"./API_agent_DocumentIdentifier.html#bedrock-Type-agent_DocumentIdentifier-dataSourceType\">dataSourceType</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_agent_DocumentIdentifier.html#bedrock-Type-agent_DocumentIdentifier-s3\">s3</a>\": <span>{</span> \n            \"<a href=\"./API_agent_S3Location.html#bedrock-Type-agent_S3Location-uri\">uri</a>\": \"<code class=\"replaceable\">string</code>\"\n         }\n      }\n   ]\n}</code></pre>",

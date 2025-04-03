@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_ListAgentCollaborators",
-  "apiNameFromUrl": "agent_ListAgentCollaborators",
+  "serviceName": "bedrock_agent",
+  "apiName": "ListAgentCollaborators",
+  "apiNameFromUrl": "ListAgentCollaborators",
+  "description": "Retrieve a list of an agent's collaborators.",
   "apiNameFromFile": "agent_ListAgentCollaborators",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentCollaborators.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/agentcollaborators/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_ListAgentCollaborators-request-maxResults\">maxResults</a>\": <code class=\"replaceable\">number</code>,\n   \"<a href=\"#bedrock-agent_ListAgentCollaborators-request-nextToken\">nextToken</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

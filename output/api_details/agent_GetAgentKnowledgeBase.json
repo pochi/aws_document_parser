@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetAgentKnowledgeBase",
-  "apiNameFromUrl": "agent_GetAgentKnowledgeBase",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetAgentKnowledgeBase",
+  "apiNameFromUrl": "GetAgentKnowledgeBase",
+  "description": "Gets information about a knowledge base associated with an agent.",
   "apiNameFromFile": "agent_GetAgentKnowledgeBase",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentKnowledgeBase.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/ HTTP/1.1\n</code></pre>",

@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_CreatePromptVersion",
-  "apiNameFromUrl": "agent_CreatePromptVersion",
+  "serviceName": "bedrock_agent",
+  "apiName": "CreatePromptVersion",
+  "apiNameFromUrl": "CreatePromptVersion",
+  "description": "Creates a static snapshot of your prompt that can be deployed to production. For more information, see Deploy prompts using Prompt management by creating versions in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_CreatePromptVersion",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreatePromptVersion.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /prompts/<code class=\"replaceable\">promptIdentifier</code>/versions HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_CreatePromptVersion-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreatePromptVersion-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreatePromptVersion-request-tags\">tags</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",

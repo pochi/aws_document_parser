@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketLocation",
   "apiNameFromUrl": "GetBucketLocation",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the Region the bucket resides in. You set the bucket's Region using the\n            LocationConstraint request parameter in a CreateBucket\n         request. For more information, see CreateBucket.\n\nWhen you use this API operation with an access point, provide the alias of the access point in place of the bucket name.\n\nWhen you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name. \nIf the Object Lambda access point alias in a request is not valid, the error code InvalidAccessPointAliasError is returned. \nFor more information about InvalidAccessPointAliasError, see List of\n            Error Codes.\n\nNoteWe recommend that you use HeadBucket to return the Region\n            that a bucket resides in. For backward compatibility, Amazon S3 continues to support\n            GetBucketLocation.\n\nThe following operations are related to GetBucketLocation:\n\nGetObject\n         \n      \n         \n            CreateBucket",
   "apiNameFromFile": "GetBucketLocation",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?location HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

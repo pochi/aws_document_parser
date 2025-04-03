@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "CreateCollection",
   "apiNameFromUrl": "CreateCollection",
+  "description": "Creates a new OpenSearch Serverless collection. For more information, see Creating and\n                managing Amazon OpenSearch Serverless collections.",
   "apiNameFromFile": "CreateCollection",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateCollection.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-CreateCollection-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateCollection-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateCollection-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateCollection-request-standbyReplicas\">standbyReplicas</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateCollection-request-tags\">tags</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_Tag.html#opensearchserverless-Type-Tag-key\">key</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_Tag.html#opensearchserverless-Type-Tag-value\">value</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ],\n   \"<a href=\"#opensearchserverless-CreateCollection-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

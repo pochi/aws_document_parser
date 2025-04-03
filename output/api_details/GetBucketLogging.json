@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketLogging",
   "apiNameFromUrl": "GetBucketLogging",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the logging status of a bucket and the permissions users have to view and modify\n         that status.\n\nThe following operations are related to GetBucketLogging:\n\nCreateBucket\n         \n      \n         \n            PutBucketLogging",
   "apiNameFromFile": "GetBucketLogging",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLogging.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?logging HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

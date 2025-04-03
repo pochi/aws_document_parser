@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "GetInferenceProfile",
   "apiNameFromUrl": "GetInferenceProfile",
+  "description": "Gets information about an inference profile. For more information, see Increase throughput and resilience with cross-region inference in Amazon Bedrock. in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "GetInferenceProfile",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /inference-profiles/<code class=\"replaceable\">inferenceProfileIdentifier</code> HTTP/1.1\n</code></pre>",

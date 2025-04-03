@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "CreateAccessPolicy",
   "apiNameFromUrl": "CreateAccessPolicy",
+  "description": "Creates a data access policy for OpenSearch Serverless. Access policies limit access to collections\n            and the resources within them, and allow a user to access that data irrespective of the\n            access mechanism or network source. For more information, see Data access\n                control for Amazon OpenSearch Serverless.",
   "apiNameFromFile": "CreateAccessPolicy",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateAccessPolicy.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-CreateAccessPolicy-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateAccessPolicy-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateAccessPolicy-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateAccessPolicy-request-policy\">policy</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateAccessPolicy-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

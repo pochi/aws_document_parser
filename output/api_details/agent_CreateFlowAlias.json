@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_CreateFlowAlias",
-  "apiNameFromUrl": "agent_CreateFlowAlias",
+  "serviceName": "bedrock_agent",
+  "apiName": "CreateFlowAlias",
+  "apiNameFromUrl": "CreateFlowAlias",
+  "description": "Creates an alias of a flow for deployment. For more information, see Deploy a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_CreateFlowAlias",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowAlias.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /flows/<code class=\"replaceable\">flowIdentifier</code>/aliases HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_CreateFlowAlias-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateFlowAlias-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateFlowAlias-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateFlowAlias-request-routingConfiguration\">routingConfiguration</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_agent_FlowAliasRoutingConfigurationListItem.html#bedrock-Type-agent_FlowAliasRoutingConfigurationListItem-flowVersion\">flowVersion</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ],\n   \"<a href=\"#bedrock-agent_CreateFlowAlias-request-tags\">tags</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "BatchGetLifecyclePolicy",
   "apiNameFromUrl": "BatchGetLifecyclePolicy",
+  "description": "Returns one or more configured OpenSearch Serverless lifecycle policies. For more information, see Viewing data lifecycle policies.",
   "apiNameFromFile": "BatchGetLifecyclePolicy",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_BatchGetLifecyclePolicy.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-BatchGetLifecyclePolicy-request-identifiers\">identifiers</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_LifecyclePolicyIdentifier.html#opensearchserverless-Type-LifecyclePolicyIdentifier-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_LifecyclePolicyIdentifier.html#opensearchserverless-Type-LifecyclePolicyIdentifier-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code></pre>",

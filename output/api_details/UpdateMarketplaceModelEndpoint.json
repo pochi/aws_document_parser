@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "UpdateMarketplaceModelEndpoint",
   "apiNameFromUrl": "UpdateMarketplaceModelEndpoint",
+  "description": "Updates the configuration of an existing endpoint for a model from Amazon Bedrock\n            Marketplace.",
   "apiNameFromFile": "UpdateMarketplaceModelEndpoint",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateMarketplaceModelEndpoint.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PATCH /marketplace-model/endpoints/<code class=\"replaceable\">endpointArn</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-UpdateMarketplaceModelEndpoint-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-UpdateMarketplaceModelEndpoint-request-endpointConfig\">endpointConfig</a>\": <span>{</span> ... }\n}</code></pre>",

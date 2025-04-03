@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeletePublicAccessBlock",
   "apiNameFromUrl": "DeletePublicAccessBlock",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nRemoves the PublicAccessBlock configuration for an Amazon S3 bucket. To use this\n         operation, you must have the s3:PutBucketPublicAccessBlock permission. For\n         more information about permissions, see Permissions Related to Bucket Subresource Operations and Managing\n            Access Permissions to Your Amazon S3 Resources.\n\nThe following operations are related to DeletePublicAccessBlock:\n\nUsing Amazon S3 Block\n                  Public Access\n         \n      \n         \n            GetPublicAccessBlock\n         \n      \n         \n            PutPublicAccessBlock\n         \n      \n         \n            GetBucketPolicyStatus",
   "apiNameFromFile": "DeletePublicAccessBlock",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?publicAccessBlock HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteAgent",
-  "apiNameFromUrl": "agent_DeleteAgent",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteAgent",
+  "apiNameFromUrl": "DeleteAgent",
+  "description": "Deletes an agent.",
   "apiNameFromFile": "agent_DeleteAgent",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgent.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /agents/<code class=\"replaceable\">agentId</code>/?skipResourceInUseCheck=<code class=\"replaceable\">skipResourceInUseCheck</code> HTTP/1.1\n</code></pre>",

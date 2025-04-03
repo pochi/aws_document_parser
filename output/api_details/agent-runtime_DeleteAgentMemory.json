@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_DeleteAgentMemory",
-  "apiNameFromUrl": "agent-runtime_DeleteAgentMemory",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "DeleteAgentMemory",
+  "apiNameFromUrl": "DeleteAgentMemory",
+  "description": "Deletes memory from the specified memory identifier.",
   "apiNameFromFile": "agent-runtime_DeleteAgentMemory",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteAgentMemory.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /agents/<code class=\"replaceable\">agentId</code>/agentAliases/<code class=\"replaceable\">agentAliasId</code>/memories?memoryId=<code class=\"replaceable\">memoryId</code>&amp;sessionId=<code class=\"replaceable\">sessionId</code> HTTP/1.1\n</code></pre>",

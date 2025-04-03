@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteBucketInventoryConfiguration",
   "apiNameFromUrl": "DeleteBucketInventoryConfiguration",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nDeletes an inventory configuration (identified by the inventory ID) from the\n         bucket.\n\nTo use this operation, you must have permissions to perform the\n            s3:PutInventoryConfiguration action. The bucket owner has this permission\n         by default. The bucket owner can grant this permission to others. For more information\n         about permissions, see Permissions Related to Bucket Subresource Operations and Managing\n            Access Permissions to Your Amazon S3 Resources.\n\nFor information about the Amazon S3 inventory feature, see Amazon S3 Inventory.\n\nOperations related to DeleteBucketInventoryConfiguration include:\n\nGetBucketInventoryConfiguration\n         \n      \n         \n            PutBucketInventoryConfiguration\n         \n      \n         \n            ListBucketInventoryConfigurations",
   "apiNameFromFile": "DeleteBucketInventoryConfiguration",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketInventoryConfiguration.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?inventory&amp;id=<code class=\"replaceable\">Id</code> HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

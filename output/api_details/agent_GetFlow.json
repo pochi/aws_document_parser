@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetFlow",
-  "apiNameFromUrl": "agent_GetFlow",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetFlow",
+  "apiNameFromUrl": "GetFlow",
+  "description": "Retrieves information about a flow. For more information, see Manage a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_GetFlow",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlow.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /flows/<code class=\"replaceable\">flowIdentifier</code>/ HTTP/1.1\n</code></pre>",

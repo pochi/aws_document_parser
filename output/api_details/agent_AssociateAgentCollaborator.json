@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_AssociateAgentCollaborator",
-  "apiNameFromUrl": "agent_AssociateAgentCollaborator",
+  "serviceName": "bedrock_agent",
+  "apiName": "AssociateAgentCollaborator",
+  "apiNameFromUrl": "AssociateAgentCollaborator",
+  "description": "Makes an agent a collaborator for another agent.",
   "apiNameFromFile": "agent_AssociateAgentCollaborator",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentCollaborator.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/agentcollaborators/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_AssociateAgentCollaborator-request-agentDescriptor\">agentDescriptor</a>\": <span>{</span> \n      \"<a href=\"./API_agent_AgentDescriptor.html#bedrock-Type-agent_AgentDescriptor-aliasArn\">aliasArn</a>\": \"<code class=\"replaceable\">string</code>\"\n   },\n   \"<a href=\"#bedrock-agent_AssociateAgentCollaborator-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_AssociateAgentCollaborator-request-collaborationInstruction\">collaborationInstruction</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_AssociateAgentCollaborator-request-collaboratorName\">collaboratorName</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_AssociateAgentCollaborator-request-relayConversationHistory\">relayConversationHistory</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

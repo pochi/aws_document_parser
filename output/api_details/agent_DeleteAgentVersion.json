@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteAgentVersion",
-  "apiNameFromUrl": "agent_DeleteAgentVersion",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteAgentVersion",
+  "apiNameFromUrl": "DeleteAgentVersion",
+  "description": "Deletes a version of an agent.",
   "apiNameFromFile": "agent_DeleteAgentVersion",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteAgentVersion.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/?skipResourceInUseCheck=<code class=\"replaceable\">skipResourceInUseCheck</code> HTTP/1.1\n</code></pre>",

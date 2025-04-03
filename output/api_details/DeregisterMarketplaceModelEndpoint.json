@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeregisterMarketplaceModelEndpoint",
   "apiNameFromUrl": "DeregisterMarketplaceModelEndpoint",
+  "description": "Deregisters an endpoint for a model from Amazon Bedrock Marketplace. This operation removes the\n            endpoint's association with Amazon Bedrock but does not delete the underlying Amazon SageMaker\n            endpoint.",
   "apiNameFromFile": "DeregisterMarketplaceModelEndpoint",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeregisterMarketplaceModelEndpoint.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /marketplace-model/endpoints/<code class=\"replaceable\">endpointArn</code>/registration HTTP/1.1\n</code></pre>",

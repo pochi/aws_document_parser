@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "GetEvaluationJob",
   "apiNameFromUrl": "GetEvaluationJob",
+  "description": "Gets information about an evaluation job, such as the status of the job.",
   "apiNameFromFile": "GetEvaluationJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetEvaluationJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /evaluation-jobs/<code class=\"replaceable\">jobIdentifier</code> HTTP/1.1\n</code></pre>",

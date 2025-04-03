@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteKnowledgeBase",
-  "apiNameFromUrl": "agent_DeleteKnowledgeBase",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteKnowledgeBase",
+  "apiNameFromUrl": "DeleteKnowledgeBase",
+  "description": "Deletes a knowledge base. Before deleting a knowledge base, you should disassociate the knowledge base from any agents that it is associated with by making a DisassociateAgentKnowledgeBase request.",
   "apiNameFromFile": "agent_DeleteKnowledgeBase",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBase.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code> HTTP/1.1\n</code></pre>",

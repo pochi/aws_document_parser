@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListGuardrails",
   "apiNameFromUrl": "ListGuardrails",
+  "description": "Lists details about all the guardrails in an account. To list the DRAFT version of all your guardrails, don't specify the guardrailIdentifier field. To list all versions of a guardrail, specify the ARN of the guardrail in the guardrailIdentifier field.\n\nYou can set the maximum number of results to return in a response in the maxResults field. If there are more results than the number you set, the response returns a nextToken that you can send in another ListGuardrails request to see the next batch of results.",
   "apiNameFromFile": "ListGuardrails",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListGuardrails.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /guardrails?guardrailIdentifier=<code class=\"replaceable\">guardrailIdentifier</code>&amp;maxResults=<code class=\"replaceable\">maxResults</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code> HTTP/1.1\n</code></pre>",

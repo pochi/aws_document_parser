@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeleteGuardrail",
   "apiNameFromUrl": "DeleteGuardrail",
+  "description": "Deletes a guardrail.\n\nTo delete a guardrail, only specify the ARN of the guardrail in the guardrailIdentifier field. If you delete a guardrail, all of its versions will be deleted.\n      \n         To delete a version of a guardrail, specify the ARN of the guardrail in the guardrailIdentifier field and the version in the guardrailVersion field.",
   "apiNameFromFile": "DeleteGuardrail",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteGuardrail.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /guardrails/<code class=\"replaceable\">guardrailIdentifier</code>?guardrailVersion=<code class=\"replaceable\">guardrailVersion</code> HTTP/1.1\n</code></pre>",

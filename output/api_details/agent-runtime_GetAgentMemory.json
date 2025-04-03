@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_GetAgentMemory",
-  "apiNameFromUrl": "agent-runtime_GetAgentMemory",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "GetAgentMemory",
+  "apiNameFromUrl": "GetAgentMemory",
+  "description": "Gets the sessions stored in the memory of the agent.",
   "apiNameFromFile": "agent-runtime_GetAgentMemory",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetAgentMemory.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /agents/<code class=\"replaceable\">agentId</code>/agentAliases/<code class=\"replaceable\">agentAliasId</code>/memories?maxItems=<code class=\"replaceable\">maxItems</code>&amp;memoryId=<code class=\"replaceable\">memoryId</code>&amp;memoryType=<code class=\"replaceable\">memoryType</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code> HTTP/1.1\n</code></pre>",

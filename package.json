@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ollama": "^0.5.14",
     "puppeteer": "^24.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"

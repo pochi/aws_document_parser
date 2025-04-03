@@ -1,6 +1,8 @@
 {
-  "apiName": "runtime_ApplyGuardrail",
-  "apiNameFromUrl": "runtime_ApplyGuardrail",
+  "serviceName": "bedrock_runtime",
+  "apiName": "ApplyGuardrail",
+  "apiNameFromUrl": "ApplyGuardrail",
+  "description": "The action to apply a guardrail.\n\nFor troubleshooting some of the common errors you might encounter when using the ApplyGuardrail API, \n            see Troubleshooting Amazon Bedrock API Error Codes in the Amazon Bedrock User Guide",
   "apiNameFromFile": "runtime_ApplyGuardrail",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ApplyGuardrail.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /guardrail/<code class=\"replaceable\">guardrailIdentifier</code>/version/<code class=\"replaceable\">guardrailVersion</code>/apply HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_ApplyGuardrail-request-content\">content</a>\": [ \n      <span>{</span> ... }\n   ],\n   \"<a href=\"#bedrock-runtime_ApplyGuardrail-request-source\">source</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

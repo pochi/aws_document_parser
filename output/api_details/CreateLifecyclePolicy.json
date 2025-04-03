@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "CreateLifecyclePolicy",
   "apiNameFromUrl": "CreateLifecyclePolicy",
+  "description": "Creates a lifecyle policy to be applied to OpenSearch Serverless indexes. Lifecycle policies define\n            the number of days or hours to retain the data on an OpenSearch Serverless index. For more information, see Creating data lifecycle policies.",
   "apiNameFromFile": "CreateLifecyclePolicy",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateLifecyclePolicy.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-CreateLifecyclePolicy-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateLifecyclePolicy-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateLifecyclePolicy-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateLifecyclePolicy-request-policy\">policy</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateLifecyclePolicy-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

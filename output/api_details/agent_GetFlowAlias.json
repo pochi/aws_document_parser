@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetFlowAlias",
-  "apiNameFromUrl": "agent_GetFlowAlias",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetFlowAlias",
+  "apiNameFromUrl": "GetFlowAlias",
+  "description": "Retrieves information about a flow. For more information, see Deploy a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_GetFlowAlias",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetFlowAlias.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /flows/<code class=\"replaceable\">flowIdentifier</code>/aliases/<code class=\"replaceable\">aliasIdentifier</code> HTTP/1.1\n</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetObjectTorrent",
   "apiNameFromUrl": "GetObjectTorrent",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns torrent files from a bucket. BitTorrent can save you bandwidth when you're\n         distributing large files.\n\nNoteYou can get torrent only for objects that are less than 5 GB in size, and that are\n            not encrypted using server-side encryption with a customer-provided encryption\n            key.\n\nTo use GET, you must have READ access to the object.\n\nThis functionality is not supported for Amazon S3 on Outposts.\n\nThe following action is related to GetObjectTorrent:\n\nGetObject",
   "apiNameFromFile": "GetObjectTorrent",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /<span>{</span>Key+}?torrent HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-request-payer: <code class=\"replaceable\">RequestPayer</code>\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

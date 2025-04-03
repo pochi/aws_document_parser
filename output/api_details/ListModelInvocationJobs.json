@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListModelInvocationJobs",
   "apiNameFromUrl": "ListModelInvocationJobs",
+  "description": "Lists all batch inference jobs in the account. For more information, see View details about a batch inference job.",
   "apiNameFromFile": "ListModelInvocationJobs",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelInvocationJobs.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /model-invocation-jobs?maxResults=<code class=\"replaceable\">maxResults</code>&amp;nameContains=<code class=\"replaceable\">nameContains</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code>&amp;sortBy=<code class=\"replaceable\">sortBy</code>&amp;sortOrder=<code class=\"replaceable\">sortOrder</code>&amp;statusEquals=<code class=\"replaceable\">statusEquals</code>&amp;submitTimeAfter=<code class=\"replaceable\">submitTimeAfter</code>&amp;submitTimeBefore=<code class=\"replaceable\">submitTimeBefore</code> HTTP/1.1\n</code></pre>",

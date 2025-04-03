@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteFlowAlias",
-  "apiNameFromUrl": "agent_DeleteFlowAlias",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteFlowAlias",
+  "apiNameFromUrl": "DeleteFlowAlias",
+  "description": "Deletes an alias of a flow.",
   "apiNameFromFile": "agent_DeleteFlowAlias",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowAlias.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /flows/<code class=\"replaceable\">flowIdentifier</code>/aliases/<code class=\"replaceable\">aliasIdentifier</code> HTTP/1.1\n</code></pre>",

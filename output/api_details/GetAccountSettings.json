@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "GetAccountSettings",
   "apiNameFromUrl": "GetAccountSettings",
+  "description": "Returns account-level settings related to OpenSearch Serverless.",
   "apiNameFromFile": "GetAccountSettings",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetAccountSettings.html",
   "requestSyntax": "Not found",

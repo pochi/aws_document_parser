@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteObjectTagging",
   "apiNameFromUrl": "DeleteObjectTagging",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nRemoves the entire tag set from the specified object. For more information about\n         managing object tags, see  Object Tagging.\n\nTo use this operation, you must have permission to perform the\n            s3:DeleteObjectTagging action.\n\nTo delete tags of a specific object version, add the versionId query\n         parameter in the request. You will need permission for the\n            s3:DeleteObjectVersionTagging action.\n\nThe following operations are related to DeleteObjectTagging:\n\nPutObjectTagging\n         \n      \n         \n            GetObjectTagging",
   "apiNameFromFile": "DeleteObjectTagging",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /<span>{</span>Key+}?tagging&amp;versionId=<code class=\"replaceable\">VersionId</code> HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketOwnershipControls",
   "apiNameFromUrl": "GetBucketOwnershipControls",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nRetrieves OwnershipControls for an Amazon S3 bucket. To use this operation, you\n         must have the s3:GetBucketOwnershipControls permission. For more information\n         about Amazon S3 permissions, see Specifying permissions in a\n            policy.\n\nFor information about Amazon S3 Object Ownership, see Using Object\n            Ownership.\n\nThe following operations are related to GetBucketOwnershipControls:\n\nPutBucketOwnershipControls\n         \n      \n         \n            DeleteBucketOwnershipControls",
   "apiNameFromFile": "GetBucketOwnershipControls",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketOwnershipControls.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?ownershipControls HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

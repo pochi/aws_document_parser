@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetDataSource",
-  "apiNameFromUrl": "agent_GetDataSource",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetDataSource",
+  "apiNameFromUrl": "GetDataSource",
+  "description": "Gets information about a data source.",
   "apiNameFromFile": "agent_GetDataSource",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetDataSource.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/datasources/<code class=\"replaceable\">dataSourceId</code> HTTP/1.1\n</code></pre>",

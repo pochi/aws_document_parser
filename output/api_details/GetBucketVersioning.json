@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketVersioning",
   "apiNameFromUrl": "GetBucketVersioning",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the versioning state of a bucket.\n\nTo retrieve the versioning state of a bucket, you must be the bucket owner.\n\nThis implementation also returns the MFA Delete status of the versioning state. If the\n         MFA Delete status is enabled, the bucket owner must use an authentication\n         device to change the versioning state of the bucket.\n\nThe following operations are related to GetBucketVersioning:\n\nGetObject\n         \n      \n         \n            PutObject\n         \n      \n         \n            DeleteObject",
   "apiNameFromFile": "GetBucketVersioning",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?versioning HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

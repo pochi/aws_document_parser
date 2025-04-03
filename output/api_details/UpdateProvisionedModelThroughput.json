@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "UpdateProvisionedModelThroughput",
   "apiNameFromUrl": "UpdateProvisionedModelThroughput",
+  "description": "Updates the name or associated model for a Provisioned Throughput. For more information, see Provisioned Throughput in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "UpdateProvisionedModelThroughput",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateProvisionedModelThroughput.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PATCH /provisioned-model-throughput/<code class=\"replaceable\">provisionedModelId</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-UpdateProvisionedModelThroughput-request-desiredModelId\">desiredModelId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-UpdateProvisionedModelThroughput-request-desiredProvisionedModelName\">desiredProvisionedModelName</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

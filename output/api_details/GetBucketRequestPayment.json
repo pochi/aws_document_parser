@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketRequestPayment",
   "apiNameFromUrl": "GetBucketRequestPayment",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the request payment configuration of a bucket. To use this version of the\n         operation, you must be the bucket owner. For more information, see Requester Pays\n            Buckets.\n\nThe following operations are related to GetBucketRequestPayment:\n\nListObjects",
   "apiNameFromFile": "GetBucketRequestPayment",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequestPayment.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?requestPayment HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

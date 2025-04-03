@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_GetPrompt",
-  "apiNameFromUrl": "agent_GetPrompt",
+  "serviceName": "bedrock_agent",
+  "apiName": "GetPrompt",
+  "apiNameFromUrl": "GetPrompt",
+  "description": "Retrieves information about the working draft (DRAFT version) of a prompt or a version of it, depending on whether you include the promptVersion field or not. For more information, see View information about prompts using Prompt management and View information about a version of your prompt in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_GetPrompt",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetPrompt.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /prompts/<code class=\"replaceable\">promptIdentifier</code>/?promptVersion=<code class=\"replaceable\">promptVersion</code> HTTP/1.1\n</code></pre>",

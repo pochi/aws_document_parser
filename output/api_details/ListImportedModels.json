@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListImportedModels",
   "apiNameFromUrl": "ListImportedModels",
+  "description": "Returns a list of models you've imported. You can filter the results to return based on one or more criteria. \n    For more information, \n    see Import a customized model in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "ListImportedModels",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListImportedModels.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /imported-models?creationTimeAfter=<code class=\"replaceable\">creationTimeAfter</code>&amp;creationTimeBefore=<code class=\"replaceable\">creationTimeBefore</code>&amp;maxResults=<code class=\"replaceable\">maxResults</code>&amp;nameContains=<code class=\"replaceable\">nameContains</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code>&amp;sortBy=<code class=\"replaceable\">sortBy</code>&amp;sortOrder=<code class=\"replaceable\">sortOrder</code> HTTP/1.1\n</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeleteModelInvocationLoggingConfiguration",
   "apiNameFromUrl": "DeleteModelInvocationLoggingConfiguration",
+  "description": "Delete the invocation logging.",
   "apiNameFromFile": "DeleteModelInvocationLoggingConfiguration",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteModelInvocationLoggingConfiguration.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"hljs http\" tabindex=\"0\"><span class=\"hljs-keyword\">DELETE</span> <span class=\"hljs-string\">/logging/modelinvocations</span> <span class=\"hljs-meta\">HTTP/1.1</span>\n</code></pre>",

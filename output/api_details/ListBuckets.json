@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "ListBuckets",
   "apiNameFromUrl": "ListBuckets",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns a list of all buckets owned by the authenticated sender of the request. To grant IAM permission to use\n         this operation, you must add the s3:ListAllMyBuckets policy action.\n\nFor information about Amazon S3 buckets, see Creating, configuring, and\n            working with Amazon S3 buckets.\n\nImportantWe strongly recommend using only paginated ListBuckets requests. Unpaginated ListBuckets requests are only supported for \n            AWS accounts set to the default general purpose bucket quota of 10,000. If you have an approved \n            general purpose bucket quota above 10,000, you must send paginated ListBuckets requests to list your account’s buckets. \n            All unpaginated ListBuckets requests will be rejected for AWS accounts with a general purpose bucket quota \n            greater than 10,000.",
   "apiNameFromFile": "ListBuckets",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?bucket-region=<code class=\"replaceable\">BucketRegion</code>&amp;continuation-token=<code class=\"replaceable\">ContinuationToken</code>&amp;max-buckets=<code class=\"replaceable\">MaxBuckets</code>&amp;prefix=<code class=\"replaceable\">Prefix</code> HTTP/1.1\nHost: s3.amazonaws.com\n</code></pre>",

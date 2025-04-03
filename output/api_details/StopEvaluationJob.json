@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "StopEvaluationJob",
   "apiNameFromUrl": "StopEvaluationJob",
+  "description": "Stops an evaluation job that is current being created or running.",
   "apiNameFromFile": "StopEvaluationJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopEvaluationJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /evaluation-job/<code class=\"replaceable\">jobIdentifier</code>/stop HTTP/1.1\n</code></pre>",

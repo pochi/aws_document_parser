@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListProvisionedModelThroughputs",
   "apiNameFromUrl": "ListProvisionedModelThroughputs",
+  "description": "Lists the Provisioned Throughputs in the account. For more information, see Provisioned Throughput in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "ListProvisionedModelThroughputs",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProvisionedModelThroughputs.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /provisioned-model-throughputs?creationTimeAfter=<code class=\"replaceable\">creationTimeAfter</code>&amp;creationTimeBefore=<code class=\"replaceable\">creationTimeBefore</code>&amp;maxResults=<code class=\"replaceable\">maxResults</code>&amp;modelArnEquals=<code class=\"replaceable\">modelArnEquals</code>&amp;nameContains=<code class=\"replaceable\">nameContains</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code>&amp;sortBy=<code class=\"replaceable\">sortBy</code>&amp;sortOrder=<code class=\"replaceable\">sortOrder</code>&amp;statusEquals=<code class=\"replaceable\">statusEquals</code> HTTP/1.1\n</code></pre>",

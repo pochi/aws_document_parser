@@ -123,7 +123,15 @@ async function scrapeAWSDocs(url: string) {
     // URL最後のコンポーネントからAPI名を抽出
     const urlParts = url.split('/');
     const lastUrlPart = urlParts[urlParts.length - 1];
-    const apiNameFromUrl = lastUrlPart.replace('API_', '').replace('.html', '');
+    const splitApiName = lastUrlPart.split('/');
+    let service_name = urlParts[3];
+    const lastPart = urlParts[urlParts.length - 1];
+    const fullApiNameFromUrl = lastPart.replace(/^API_/, '').replace(/\.html$/, '');
+    const splitApiNameFromUrl = fullApiNameFromUrl.split('_');
+    const apiNameFromUrl = splitApiNameFromUrl[splitApiNameFromUrl.length - 1];
+    if (splitApiNameFromUrl.length > 1) {
+      service_name = [service_name, splitApiNameFromUrl[0]].join('_');
+    }
     
     // ページからAPI名を取得（バックアップメソッド）
     const apiNameFromPage = await page.evaluate(() => {
@@ -150,6 +158,7 @@ async function scrapeAWSDocs(url: string) {
     const result = await page.evaluate(() => {
       // 返すデータのオブジェクト
       const data = {
+        description: '',
         requestSyntax: '',
         requestParameters: '',
         requestBody: '',
@@ -158,7 +167,29 @@ async function scrapeAWSDocs(url: string) {
         errors: '',
         rawSections: {} // デバッグ用の生データ
       };
-      
+
+      // h1要素を取得
+      const h1 = document.querySelector('h1');
+      if (h1) {
+        let next = h1.nextElementSibling;
+        let descriptionText = '';
+
+        // h2が見つかるまでテキストを収集
+        while (next && next.tagName !== 'H2') {
+          if (next.textContent && !next.querySelector('div.tabs')) {
+            descriptionText += next.textContent.trim() + '\n\n';
+          }
+          next = next.nextElementSibling;
+        }
+
+        // 不要なテキストをフィルタリング
+        data.description = descriptionText
+          .replace(/©.*Amazon Web Services.*/g, '')
+          .replace(/\n{3,}/g, '\n\n')
+          .replace(/^PDF\s*\n*\s*/, '')
+          .trim();
+      }
+
       // ページ内のすべてのh2要素を取得
       const headings = Array.from(document.querySelectorAll('h2, h3'));
       console.log('--------------------------');
@@ -214,73 +245,11 @@ async function scrapeAWSDocs(url: string) {
     
     // コンテンツの有無をチェック
     let contentFound = false;
-    for (const key of ['requestSyntax', 'requestParameters', 'requestBody', 'responseSyntax', 'responseElements', 'errors']) {
+    for (const key of ['description', 'requestSyntax', 'requestParameters', 'requestBody', 'responseSyntax', 'responseElements', 'errors']) {
       if (result[key] && result[key].length > 0) {
         contentFound = true;
         break;
       }
-    }
-    
-    // コンテンツが見つからない場合は代替手段でデータを取得
-    if (!contentFound) {
-      console.log('    通常の方法でコンテンツが見つかりませんでした。代替手段を試行します...');
-      
-      // ページからすべてのDIVを取得し構造を分析
-      const alternativeResult = await page.evaluate(() => {
-        const data = {
-          sections: {
-            requestSyntax: '',
-            requestParameters: '',
-            requestBody: '',
-            responseSyntax: '',
-            responseElements: '',
-            errors: ''
-          },
-          divTree: []
-        };
-        
-        // すべてのdiv要素を取得
-        const divs = Array.from(document.querySelectorAll('div'));
-        
-        // 各divの情報を収集
-        divs.forEach((div, index) => {
-          // 15個以上の子要素を持つdivのみ対象
-          if (div.children.length >= 15) {
-            const childTypes = Array.from(div.children).map(c => c.tagName);
-            
-            // テキスト内容に基づいてセクションを検出
-            const text = div.textContent.toLowerCase();
-            if (text.includes('request syntax')) {
-              data.sections.requestSyntax = div.outerHTML;
-            }
-            else if (text.includes('request parameters')) {
-              data.sections.requestParameters = div.outerHTML;
-            }
-            else if (text.includes('request body')) {
-              data.sections.requestBody = div.outerHTML;
-            }
-            else if (text.includes('response syntax')) {
-              data.sections.responseSyntax = div.outerHTML;
-            }
-            else if (text.includes('response elements')) {
-              data.sections.responseElements = div.outerHTML;
-            }
-            else if (text.includes('errors') && text.length < 300) {
-              data.sections.errors = div.outerHTML;
-            }
-          }
-        });
-        
-        return data;
-      });
-      
-      // 見つかったセクションをマージ
-      for (const [key, value] of Object.entries(alternativeResult.sections)) {
-        if (value && typeof value === 'string' && value.length > 0) {
-          result[key] = value;
-        }
-      }
-      
     }
     
     // ファイル名から抽出したAPIの実際の名前
@@ -289,8 +258,10 @@ async function scrapeAWSDocs(url: string) {
     
     // 最終的な結果をフォーマット
     const formattedResult = {
+      serviceName: service_name,
       apiName: apiName,
       apiNameFromUrl: apiNameFromUrl,
+      description: result.description,
       apiNameFromFile: apiNameFromFileName,
       url: url,
       requestSyntax: result.requestSyntax || "Not found",

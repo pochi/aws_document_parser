@@ -1,6 +1,8 @@
 {
-  "apiName": "runtime_StartAsyncInvoke",
-  "apiNameFromUrl": "runtime_StartAsyncInvoke",
+  "serviceName": "bedrock_runtime",
+  "apiName": "StartAsyncInvoke",
+  "apiNameFromUrl": "StartAsyncInvoke",
+  "description": "Starts an asynchronous invocation.\n\nThis operation requires permission for the bedrock:InvokeModel action.\n\nImportantTo deny all inference access to resources that you specify in the modelId field, you\n         need to deny access to the bedrock:InvokeModel and\n            bedrock:InvokeModelWithResponseStream actions. Doing this also denies\n         access to the resource through the Converse API actions (Converse and ConverseStream). For more information see Deny access for inference on specific models.",
   "apiNameFromFile": "runtime_StartAsyncInvoke",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /async-invoke HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelId\">modelId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-modelInput\">modelInput</a>\": <code class=\"replaceable\">JSON value</code>,\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-outputDataConfig\">outputDataConfig</a>\": <span>{</span> ... },\n   \"<a href=\"#bedrock-runtime_StartAsyncInvoke-request-tags\">tags</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-key\">key</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_runtime_Tag.html#bedrock-Type-runtime_Tag-value\">value</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketCors",
   "apiNameFromUrl": "GetBucketCors",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nReturns the Cross-Origin Resource Sharing (CORS) configuration information set for the\n         bucket.\n\nTo use this operation, you must have permission to perform the\n            s3:GetBucketCORS action. By default, the bucket owner has this permission\n         and can grant it to others.\n\nWhen you use this API operation with an access point, provide the alias of the access point in place of the bucket name.\n\nWhen you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name. \nIf the Object Lambda access point alias in a request is not valid, the error code InvalidAccessPointAliasError is returned. \nFor more information about InvalidAccessPointAliasError, see List of\n            Error Codes.\n\nFor more information about CORS, see  Enabling Cross-Origin Resource\n         Sharing.\n\nThe following operations are related to GetBucketCors:\n\nPutBucketCors\n         \n      \n         \n            DeleteBucketCors",
   "apiNameFromFile": "GetBucketCors",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketCors.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?cors HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

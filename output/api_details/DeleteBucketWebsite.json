@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteBucketWebsite",
   "apiNameFromUrl": "DeleteBucketWebsite",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nThis action removes the website configuration for a bucket. Amazon S3 returns a 200\n            OK response upon successfully deleting a website configuration on the specified\n         bucket. You will get a 200 OK response if the website configuration you are\n         trying to delete does not exist on the bucket. Amazon S3 returns a 404 response if\n         the bucket specified in the request does not exist.\n\nThis DELETE action requires the S3:DeleteBucketWebsite permission. By\n         default, only the bucket owner can delete the website configuration attached to a bucket.\n         However, bucket owners can grant other users permission to delete the website configuration\n         by writing a bucket policy granting them the S3:DeleteBucketWebsite\n         permission.\n\nFor more information about hosting websites, see Hosting Websites on Amazon S3.\n\nThe following operations are related to DeleteBucketWebsite:\n\nGetBucketWebsite\n         \n      \n         \n            PutBucketWebsite",
   "apiNameFromFile": "DeleteBucketWebsite",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketWebsite.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?website HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

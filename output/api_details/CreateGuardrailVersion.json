@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "CreateGuardrailVersion",
   "apiNameFromUrl": "CreateGuardrailVersion",
+  "description": "Creates a version of the guardrail. Use this API to create a snapshot of the \n      guardrail when you are satisfied with a configuration, or to compare the configuration with another version.",
   "apiNameFromFile": "CreateGuardrailVersion",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGuardrailVersion.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /guardrails/<code class=\"replaceable\">guardrailIdentifier</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-CreateGuardrailVersion-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-CreateGuardrailVersion-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

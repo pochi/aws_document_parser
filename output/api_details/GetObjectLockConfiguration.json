@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetObjectLockConfiguration",
   "apiNameFromUrl": "GetObjectLockConfiguration",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nGets the Object Lock configuration for a bucket. The rule specified in the Object Lock\n         configuration will be applied by default to every new object placed in the specified\n         bucket. For more information, see Locking Objects.\n\nThe following action is related to GetObjectLockConfiguration:\n\nGetObjectAttributes",
   "apiNameFromFile": "GetObjectLockConfiguration",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLockConfiguration.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?object-lock HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_GetSession",
-  "apiNameFromUrl": "agent-runtime_GetSession",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "GetSession",
+  "apiNameFromUrl": "GetSession",
+  "description": "Retrieves details about a specific session. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_GetSession",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetSession.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /sessions/<code class=\"replaceable\">sessionIdentifier</code>/ HTTP/1.1\n</code></pre>",

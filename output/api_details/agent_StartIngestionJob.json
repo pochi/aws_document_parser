@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_StartIngestionJob",
-  "apiNameFromUrl": "agent_StartIngestionJob",
+  "serviceName": "bedrock_agent",
+  "apiName": "StartIngestionJob",
+  "apiNameFromUrl": "StartIngestionJob",
+  "description": "Begins a data ingestion job. Data sources are ingested into your knowledge base so that Large Language Models (LLMs) can use your data.",
   "apiNameFromFile": "agent_StartIngestionJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/datasources/<code class=\"replaceable\">dataSourceId</code>/ingestionjobs/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_StartIngestionJob-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_StartIngestionJob-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

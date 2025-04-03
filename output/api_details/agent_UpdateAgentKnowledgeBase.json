@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_UpdateAgentKnowledgeBase",
-  "apiNameFromUrl": "agent_UpdateAgentKnowledgeBase",
+  "serviceName": "bedrock_agent",
+  "apiName": "UpdateAgentKnowledgeBase",
+  "apiNameFromUrl": "UpdateAgentKnowledgeBase",
+  "description": "Updates the configuration for a knowledge base that has been associated with an agent.",
   "apiNameFromFile": "agent_UpdateAgentKnowledgeBase",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentKnowledgeBase.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_UpdateAgentKnowledgeBase-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_UpdateAgentKnowledgeBase-request-knowledgeBaseState\">knowledgeBaseState</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

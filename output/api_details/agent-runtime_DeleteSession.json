@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_DeleteSession",
-  "apiNameFromUrl": "agent-runtime_DeleteSession",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "DeleteSession",
+  "apiNameFromUrl": "DeleteSession",
+  "description": "Deletes a session that you ended. You can't delete a session with an ACTIVE status. To delete an active session, you must first end it with the \n         EndSession API operation.\n         For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_DeleteSession",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteSession.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /sessions/<code class=\"replaceable\">sessionIdentifier</code>/ HTTP/1.1\n</code></pre>",

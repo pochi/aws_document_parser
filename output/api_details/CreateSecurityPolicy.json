@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "CreateSecurityPolicy",
   "apiNameFromUrl": "CreateSecurityPolicy",
+  "description": "Creates a security policy to be used by one or more OpenSearch Serverless collections. Security\n            policies provide access to a collection and its OpenSearch Dashboards endpoint from\n            public networks or specific VPC endpoints. They also allow you to secure a collection\n            with a KMS encryption key. For more information, see Network access\n                for Amazon OpenSearch Serverless and Encryption at\n                rest for Amazon OpenSearch Serverless.",
   "apiNameFromFile": "CreateSecurityPolicy",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateSecurityPolicy.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-CreateSecurityPolicy-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateSecurityPolicy-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateSecurityPolicy-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateSecurityPolicy-request-policy\">policy</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateSecurityPolicy-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

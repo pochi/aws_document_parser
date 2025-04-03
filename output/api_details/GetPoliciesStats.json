@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "GetPoliciesStats",
   "apiNameFromUrl": "GetPoliciesStats",
+  "description": "Returns statistical information about your OpenSearch Serverless access policies, security\n            configurations, and security policies.",
   "apiNameFromFile": "GetPoliciesStats",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_GetPoliciesStats.html",
   "requestSyntax": "Not found",

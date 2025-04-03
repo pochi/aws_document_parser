@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetObjectRetention",
   "apiNameFromUrl": "GetObjectRetention",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nRetrieves an object's retention settings. For more information, see Locking\n         Objects.\n\nThis functionality is not supported for Amazon S3 on Outposts.\n\nThe following action is related to GetObjectRetention:\n\nGetObjectAttributes",
   "apiNameFromFile": "GetObjectRetention",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectRetention.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /<span>{</span>Key+}?retention&amp;versionId=<code class=\"replaceable\">VersionId</code> HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-request-payer: <code class=\"replaceable\">RequestPayer</code>\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

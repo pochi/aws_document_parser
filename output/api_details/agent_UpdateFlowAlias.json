@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_UpdateFlowAlias",
-  "apiNameFromUrl": "agent_UpdateFlowAlias",
+  "serviceName": "bedrock_agent",
+  "apiName": "UpdateFlowAlias",
+  "apiNameFromUrl": "UpdateFlowAlias",
+  "description": "Modifies the alias of a flow. Include both fields that you want to keep and ones that you want to change. For more information, see Deploy a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_UpdateFlowAlias",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlowAlias.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /flows/<code class=\"replaceable\">flowIdentifier</code>/aliases/<code class=\"replaceable\">aliasIdentifier</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_UpdateFlowAlias-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_UpdateFlowAlias-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_UpdateFlowAlias-request-routingConfiguration\">routingConfiguration</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_agent_FlowAliasRoutingConfigurationListItem.html#bedrock-Type-agent_FlowAliasRoutingConfigurationListItem-flowVersion\">flowVersion</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code></pre>",

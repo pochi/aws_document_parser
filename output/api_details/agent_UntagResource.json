@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_UntagResource",
-  "apiNameFromUrl": "agent_UntagResource",
+  "serviceName": "bedrock_agent",
+  "apiName": "UntagResource",
+  "apiNameFromUrl": "UntagResource",
+  "description": "Remove tags from a resource.",
   "apiNameFromFile": "agent_UntagResource",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UntagResource.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /tags/<code class=\"replaceable\">resourceArn</code>?tagKeys=<code class=\"replaceable\">tagKeys</code> HTTP/1.1\n</code></pre>",

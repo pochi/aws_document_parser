@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "GetBucketMetadataTableConfiguration",
   "apiNameFromUrl": "GetBucketMetadataTableConfiguration",
+  "description": "Retrieves the metadata table configuration for a general purpose bucket. For more\n         information, see Accelerating data\n            discovery with S3 Metadata in the Amazon S3 User Guide.\n\nPermissions\n         \n            To use this operation, you must have the s3:GetBucketMetadataTableConfiguration permission. For more\n                  information, see Setting up\n                     permissions for configuring metadata tables in the\n                  Amazon S3 User Guide.\n\nThe following operations are related to GetBucketMetadataTableConfiguration:\n\nCreateBucketMetadataTableConfiguration\n         \n      \n         \n            DeleteBucketMetadataTableConfiguration",
   "apiNameFromFile": "GetBucketMetadataTableConfiguration",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /?metadataTable HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

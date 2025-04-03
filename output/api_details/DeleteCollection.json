@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "DeleteCollection",
   "apiNameFromUrl": "DeleteCollection",
+  "description": "Deletes an OpenSearch Serverless collection. For more information, see Creating and\n                managing Amazon OpenSearch Serverless collections.",
   "apiNameFromFile": "DeleteCollection",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_DeleteCollection.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-DeleteCollection-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-DeleteCollection-request-id\">id</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

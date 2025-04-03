@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_ListFlowVersions",
-  "apiNameFromUrl": "agent_ListFlowVersions",
+  "serviceName": "bedrock_agent",
+  "apiName": "ListFlowVersions",
+  "apiNameFromUrl": "ListFlowVersions",
+  "description": "Returns a list of information about each flow. For more information, see Deploy a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_ListFlowVersions",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowVersions.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /flows/<code class=\"replaceable\">flowIdentifier</code>/versions?maxResults=<code class=\"replaceable\">maxResults</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code> HTTP/1.1\n</code></pre>",

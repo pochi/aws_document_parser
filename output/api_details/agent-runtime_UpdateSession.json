@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_UpdateSession",
-  "apiNameFromUrl": "agent-runtime_UpdateSession",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "UpdateSession",
+  "apiNameFromUrl": "UpdateSession",
+  "description": "Updates the metadata or encryption settings of a session. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_UpdateSession",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_UpdateSession.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /sessions/<code class=\"replaceable\">sessionIdentifier</code>/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_UpdateSession-request-sessionMetadata\">sessionMetadata</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",

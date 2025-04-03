@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_EndSession",
-  "apiNameFromUrl": "agent-runtime_EndSession",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "EndSession",
+  "apiNameFromUrl": "EndSession",
+  "description": "Ends the session. \n         After you end a session, you can still access its content but you can’t add to it. To delete the session and it's content, you use the DeleteSession API operation.\n         For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_EndSession",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_EndSession.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PATCH /sessions/<code class=\"replaceable\">sessionIdentifier</code> HTTP/1.1\n</code></pre>",

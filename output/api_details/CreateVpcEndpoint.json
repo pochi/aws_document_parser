@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "CreateVpcEndpoint",
   "apiNameFromUrl": "CreateVpcEndpoint",
+  "description": "Creates an OpenSearch Serverless-managed interface VPC endpoint. For more information, see Access\n                Amazon OpenSearch Serverless using an interface endpoint.",
   "apiNameFromFile": "CreateVpcEndpoint",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_CreateVpcEndpoint.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-CreateVpcEndpoint-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateVpcEndpoint-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-CreateVpcEndpoint-request-securityGroupIds\">securityGroupIds</a>\": [ \"<code class=\"replaceable\">string</code>\" ],\n   \"<a href=\"#opensearchserverless-CreateVpcEndpoint-request-subnetIds\">subnetIds</a>\": [ \"<code class=\"replaceable\">string</code>\" ],\n   \"<a href=\"#opensearchserverless-CreateVpcEndpoint-request-vpcId\">vpcId</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

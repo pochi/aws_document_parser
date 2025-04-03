@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_ListInvocations",
-  "apiNameFromUrl": "agent-runtime_ListInvocations",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "ListInvocations",
+  "apiNameFromUrl": "ListInvocations",
+  "description": "Lists all invocations associated with a specific session. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_ListInvocations",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListInvocations.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /sessions/<code class=\"replaceable\">sessionIdentifier</code>/invocations/?maxResults=<code class=\"replaceable\">maxResults</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code> HTTP/1.1\n</code></pre>",

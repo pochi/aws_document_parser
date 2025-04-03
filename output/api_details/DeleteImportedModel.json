@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeleteImportedModel",
   "apiNameFromUrl": "DeleteImportedModel",
+  "description": "Deletes a custom model that you imported earlier. For more information, \n        see Import a customized model in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "DeleteImportedModel",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteImportedModel.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /imported-models/<code class=\"replaceable\">modelIdentifier</code> HTTP/1.1\n</code></pre>",

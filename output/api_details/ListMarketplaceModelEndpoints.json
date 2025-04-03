@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListMarketplaceModelEndpoints",
   "apiNameFromUrl": "ListMarketplaceModelEndpoints",
+  "description": "Lists the endpoints for models from Amazon Bedrock Marketplace in your AWS\n            account.",
   "apiNameFromFile": "ListMarketplaceModelEndpoints",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListMarketplaceModelEndpoints.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /marketplace-model/endpoints?maxResults=<code class=\"replaceable\">maxResults</code>&amp;modelSourceIdentifier=<code class=\"replaceable\">modelSourceEquals</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code> HTTP/1.1\n</code></pre>",

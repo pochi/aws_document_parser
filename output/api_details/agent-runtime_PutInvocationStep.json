@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_PutInvocationStep",
-  "apiNameFromUrl": "agent-runtime_PutInvocationStep",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "PutInvocationStep",
+  "apiNameFromUrl": "PutInvocationStep",
+  "description": "Add an invocation step to an invocation in a session. An invocation step stores fine-grained state checkpoints, including text and images, for each interaction. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.\n\nRelated APIs:\n\nGetInvocationStep\n         \n      \n         \n            ListInvocationSteps\n         \n      \n         \n            ListInvocations\n         \n      \n         \n            ListSessions",
   "apiNameFromFile": "agent-runtime_PutInvocationStep",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /sessions/<code class=\"replaceable\">sessionIdentifier</code>/invocationSteps/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_PutInvocationStep-request-invocationIdentifier\">invocationIdentifier</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent-runtime_PutInvocationStep-request-invocationStepId\">invocationStepId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent-runtime_PutInvocationStep-request-invocationStepTime\">invocationStepTime</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent-runtime_PutInvocationStep-request-payload\">payload</a>\": <span>{</span> ... }\n}</code></pre>",

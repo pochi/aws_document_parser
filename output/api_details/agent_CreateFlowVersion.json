@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_CreateFlowVersion",
-  "apiNameFromUrl": "agent_CreateFlowVersion",
+  "serviceName": "bedrock_agent",
+  "apiName": "CreateFlowVersion",
+  "apiNameFromUrl": "CreateFlowVersion",
+  "description": "Creates a version of the flow that you can deploy. For more information, see Deploy a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_CreateFlowVersion",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlowVersion.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /flows/<code class=\"replaceable\">flowIdentifier</code>/versions HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_CreateFlowVersion-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateFlowVersion-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteFlowVersion",
-  "apiNameFromUrl": "agent_DeleteFlowVersion",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteFlowVersion",
+  "apiNameFromUrl": "DeleteFlowVersion",
+  "description": "Deletes a version of a flow.",
   "apiNameFromFile": "agent_DeleteFlowVersion",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlowVersion.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /flows/<code class=\"replaceable\">flowIdentifier</code>/versions/<code class=\"replaceable\">flowVersion</code>/?skipResourceInUseCheck=<code class=\"replaceable\">skipResourceInUseCheck</code> HTTP/1.1\n</code></pre>",

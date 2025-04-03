@@ -1,6 +1,8 @@
 {
-  "apiName": "runtime_GetAsyncInvoke",
-  "apiNameFromUrl": "runtime_GetAsyncInvoke",
+  "serviceName": "bedrock_runtime",
+  "apiName": "GetAsyncInvoke",
+  "apiNameFromUrl": "GetAsyncInvoke",
+  "description": "Retrieve information about an asynchronous invocation.",
   "apiNameFromFile": "runtime_GetAsyncInvoke",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_GetAsyncInvoke.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /async-invoke/<code class=\"replaceable\">invocationArn</code> HTTP/1.1\n</code></pre>",

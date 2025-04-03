@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_ListAgentKnowledgeBases",
-  "apiNameFromUrl": "agent_ListAgentKnowledgeBases",
+  "serviceName": "bedrock_agent",
+  "apiName": "ListAgentKnowledgeBases",
+  "apiNameFromUrl": "ListAgentKnowledgeBases",
+  "description": "Lists knowledge bases associated with an agent and information about each one.",
   "apiNameFromFile": "agent_ListAgentKnowledgeBases",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentKnowledgeBases.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/knowledgebases/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_ListAgentKnowledgeBases-request-maxResults\">maxResults</a>\": <code class=\"replaceable\">number</code>,\n   \"<a href=\"#bedrock-agent_ListAgentKnowledgeBases-request-nextToken\">nextToken</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

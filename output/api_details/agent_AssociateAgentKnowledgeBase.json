@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_AssociateAgentKnowledgeBase",
-  "apiNameFromUrl": "agent_AssociateAgentKnowledgeBase",
+  "serviceName": "bedrock_agent",
+  "apiName": "AssociateAgentKnowledgeBase",
+  "apiNameFromUrl": "AssociateAgentKnowledgeBase",
+  "description": "Associates a knowledge base with an agent. If a knowledge base is associated and its indexState is set to Enabled, the agent queries the knowledge base for information to augment its response to the user.",
   "apiNameFromFile": "agent_AssociateAgentKnowledgeBase",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentKnowledgeBase.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/knowledgebases/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_AssociateAgentKnowledgeBase-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_AssociateAgentKnowledgeBase-request-knowledgeBaseId\">knowledgeBaseId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_AssociateAgentKnowledgeBase-request-knowledgeBaseState\">knowledgeBaseState</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

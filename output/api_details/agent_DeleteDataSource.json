@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteDataSource",
-  "apiNameFromUrl": "agent_DeleteDataSource",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteDataSource",
+  "apiNameFromUrl": "DeleteDataSource",
+  "description": "Deletes a data source from a knowledge base.",
   "apiNameFromFile": "agent_DeleteDataSource",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteDataSource.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/datasources/<code class=\"replaceable\">dataSourceId</code> HTTP/1.1\n</code></pre>",

@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "GetModelImportJob",
   "apiNameFromUrl": "GetModelImportJob",
+  "description": "Retrieves the properties associated with import model job, including the status of the \n            job. For more information, \n            see Import a customized model in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "GetModelImportJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /model-import-jobs/<code class=\"replaceable\">jobIdentifier</code> HTTP/1.1\n</code></pre>",

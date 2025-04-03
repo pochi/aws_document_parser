@@ -1,6 +1,8 @@
 {
+  "serviceName": "ja_jp",
   "apiName": "UpdateSecurityPolicy",
   "apiNameFromUrl": "UpdateSecurityPolicy",
+  "description": "Updates an OpenSearch Serverless security policy. For more information, see Network access\n            for Amazon OpenSearch Serverless and Encryption at\n                rest for Amazon OpenSearch Serverless.",
   "apiNameFromFile": "UpdateSecurityPolicy",
   "url": "https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/ServerlessAPIReference/API_UpdateSecurityPolicy.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\"><span>{</span>\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-name\">name</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-policy\">policy</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-policyVersion\">policyVersion</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#opensearchserverless-UpdateSecurityPolicy-request-type\">type</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

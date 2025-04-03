@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_GetInvocationStep",
-  "apiNameFromUrl": "agent-runtime_GetInvocationStep",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "GetInvocationStep",
+  "apiNameFromUrl": "GetInvocationStep",
+  "description": "Retrieves the details of a specific invocation step within an invocation in a session. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.",
   "apiNameFromFile": "agent-runtime_GetInvocationStep",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /sessions/<code class=\"replaceable\">sessionIdentifier</code>/invocationSteps/<code class=\"replaceable\">invocationStepId</code> HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_GetInvocationStep-request-invocationIdentifier\">invocationIdentifier</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

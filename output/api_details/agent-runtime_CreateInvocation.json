@@ -1,6 +1,8 @@
 {
-  "apiName": "agent-runtime_CreateInvocation",
-  "apiNameFromUrl": "agent-runtime_CreateInvocation",
+  "serviceName": "bedrock_agent-runtime",
+  "apiName": "CreateInvocation",
+  "apiNameFromUrl": "CreateInvocation",
+  "description": "Creates a new invocation within a session. An invocation groups the related invocation steps that store the content from\n         a conversation. For more information about sessions, see Store and retrieve conversation history and context with Amazon Bedrock sessions.\n\nRelated APIs\n\nListInvocations\n         \n      \n         \n            ListSessions\n         \n      \n         \n            GetSession",
   "apiNameFromFile": "agent-runtime_CreateInvocation",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateInvocation.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /sessions/<code class=\"replaceable\">sessionIdentifier</code>/invocations/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent-runtime_CreateInvocation-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent-runtime_CreateInvocation-request-invocationId\">invocationId</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

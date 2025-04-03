@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "CreateModelCopyJob",
   "apiNameFromUrl": "CreateModelCopyJob",
+  "description": "Copies a model to another region so that it can be used there. For more information, see Copy models to be used in other regions in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "CreateModelCopyJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCopyJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /model-copy-jobs HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-CreateModelCopyJob-request-clientRequestToken\">clientRequestToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-CreateModelCopyJob-request-modelKmsKeyId\">modelKmsKeyId</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-CreateModelCopyJob-request-sourceModelArn\">sourceModelArn</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-CreateModelCopyJob-request-targetModelName\">targetModelName</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-CreateModelCopyJob-request-targetModelTags\">targetModelTags</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_Tag.html#bedrock-Type-Tag-key\">key</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_Tag.html#bedrock-Type-Tag-value\">value</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ]\n}</code></pre>",

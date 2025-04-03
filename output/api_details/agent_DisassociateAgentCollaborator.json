@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DisassociateAgentCollaborator",
-  "apiNameFromUrl": "agent_DisassociateAgentCollaborator",
+  "serviceName": "bedrock_agent",
+  "apiName": "DisassociateAgentCollaborator",
+  "apiNameFromUrl": "DisassociateAgentCollaborator",
+  "description": "Disassociates an agent collaborator.",
   "apiNameFromFile": "agent_DisassociateAgentCollaborator",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DisassociateAgentCollaborator.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /agents/<code class=\"replaceable\">agentId</code>/agentversions/<code class=\"replaceable\">agentVersion</code>/agentcollaborators/<code class=\"replaceable\">collaboratorId</code>/ HTTP/1.1\n</code></pre>",

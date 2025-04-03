@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_ListTagsForResource",
-  "apiNameFromUrl": "agent_ListTagsForResource",
+  "serviceName": "bedrock_agent",
+  "apiName": "ListTagsForResource",
+  "apiNameFromUrl": "ListTagsForResource",
+  "description": "List all the tags for the resource you specify.",
   "apiNameFromFile": "agent_ListTagsForResource",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListTagsForResource.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /tags/<code class=\"replaceable\">resourceArn</code> HTTP/1.1\n</code></pre>",

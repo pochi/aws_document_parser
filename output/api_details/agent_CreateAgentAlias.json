@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_CreateAgentAlias",
-  "apiNameFromUrl": "agent_CreateAgentAlias",
+  "serviceName": "bedrock_agent",
+  "apiName": "CreateAgentAlias",
+  "apiNameFromUrl": "CreateAgentAlias",
+  "description": "Creates an alias of an agent that can be used to deploy the agent.",
   "apiNameFromFile": "agent_CreateAgentAlias",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentAlias.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">PUT /agents/<code class=\"replaceable\">agentId</code>/agentaliases/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_CreateAgentAlias-request-agentAliasName\">agentAliasName</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateAgentAlias-request-clientToken\">clientToken</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateAgentAlias-request-description\">description</a>\": \"<code class=\"replaceable\">string</code>\",\n   \"<a href=\"#bedrock-agent_CreateAgentAlias-request-routingConfiguration\">routingConfiguration</a>\": [ \n      <span>{</span> \n         \"<a href=\"./API_agent_AgentAliasRoutingConfigurationListItem.html#bedrock-Type-agent_AgentAliasRoutingConfigurationListItem-agentVersion\">agentVersion</a>\": \"<code class=\"replaceable\">string</code>\",\n         \"<a href=\"./API_agent_AgentAliasRoutingConfigurationListItem.html#bedrock-Type-agent_AgentAliasRoutingConfigurationListItem-provisionedThroughput\">provisionedThroughput</a>\": \"<code class=\"replaceable\">string</code>\"\n      }\n   ],\n   \"<a href=\"#bedrock-agent_CreateAgentAlias-request-tags\">tags</a>\": <span>{</span> \n      \"<code class=\"replaceable\">string</code>\" : \"<code class=\"replaceable\">string</code>\" \n   }\n}</code></pre>",

@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_StopIngestionJob",
-  "apiNameFromUrl": "agent_StopIngestionJob",
+  "serviceName": "bedrock_agent",
+  "apiName": "StopIngestionJob",
+  "apiNameFromUrl": "StopIngestionJob",
+  "description": "Stops a currently running data ingestion job. You can send a StartIngestionJob request again to ingest the rest of your data when you are ready.",
   "apiNameFromFile": "agent_StopIngestionJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StopIngestionJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /knowledgebases/<code class=\"replaceable\">knowledgeBaseId</code>/datasources/<code class=\"replaceable\">dataSourceId</code>/ingestionjobs/<code class=\"replaceable\">ingestionJobId</code>/stop HTTP/1.1\n</code></pre>",

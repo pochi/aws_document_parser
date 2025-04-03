@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_DeleteFlow",
-  "apiNameFromUrl": "agent_DeleteFlow",
+  "serviceName": "bedrock_agent",
+  "apiName": "DeleteFlow",
+  "apiNameFromUrl": "DeleteFlow",
+  "description": "Deletes a flow.",
   "apiNameFromFile": "agent_DeleteFlow",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteFlow.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /flows/<code class=\"replaceable\">flowIdentifier</code>/?skipResourceInUseCheck=<code class=\"replaceable\">skipResourceInUseCheck</code> HTTP/1.1\n</code></pre>",

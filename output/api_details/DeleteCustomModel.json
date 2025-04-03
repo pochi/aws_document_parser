@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "DeleteCustomModel",
   "apiNameFromUrl": "DeleteCustomModel",
+  "description": "Deletes a custom model that you created earlier. For more information, see Custom models in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "DeleteCustomModel",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteCustomModel.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /custom-models/<code class=\"replaceable\">modelIdentifier</code> HTTP/1.1\n</code></pre>",

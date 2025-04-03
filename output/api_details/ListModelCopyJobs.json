@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "ListModelCopyJobs",
   "apiNameFromUrl": "ListModelCopyJobs",
+  "description": "Returns a list of model copy jobs that you have submitted. You can filter the jobs to return based on\n            one or more criteria. For more information, see Copy models to be used in other regions in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "ListModelCopyJobs",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelCopyJobs.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">GET /model-copy-jobs?creationTimeAfter=<code class=\"replaceable\">creationTimeAfter</code>&amp;creationTimeBefore=<code class=\"replaceable\">creationTimeBefore</code>&amp;maxResults=<code class=\"replaceable\">maxResults</code>&amp;nextToken=<code class=\"replaceable\">nextToken</code>&amp;outputModelNameContains=<code class=\"replaceable\">targetModelNameContains</code>&amp;sortBy=<code class=\"replaceable\">sortBy</code>&amp;sortOrder=<code class=\"replaceable\">sortOrder</code>&amp;sourceAccountEquals=<code class=\"replaceable\">sourceAccountEquals</code>&amp;sourceModelArnEquals=<code class=\"replaceable\">sourceModelArnEquals</code>&amp;statusEquals=<code class=\"replaceable\">statusEquals</code> HTTP/1.1\n</code></pre>",

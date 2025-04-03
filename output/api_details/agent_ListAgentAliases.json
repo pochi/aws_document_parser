@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_ListAgentAliases",
-  "apiNameFromUrl": "agent_ListAgentAliases",
+  "serviceName": "bedrock_agent",
+  "apiName": "ListAgentAliases",
+  "apiNameFromUrl": "ListAgentAliases",
+  "description": "Lists the aliases of an agent and information about each one.",
   "apiNameFromFile": "agent_ListAgentAliases",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentAliases.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /agents/<code class=\"replaceable\">agentId</code>/agentaliases/ HTTP/1.1\nContent-type: application/json\n\n<span>{</span>\n   \"<a href=\"#bedrock-agent_ListAgentAliases-request-maxResults\">maxResults</a>\": <code class=\"replaceable\">number</code>,\n   \"<a href=\"#bedrock-agent_ListAgentAliases-request-nextToken\">nextToken</a>\": \"<code class=\"replaceable\">string</code>\"\n}</code></pre>",

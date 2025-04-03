@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteBucketTagging",
   "apiNameFromUrl": "DeleteBucketTagging",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nDeletes the tags from the bucket.\n\nTo use this operation, you must have permission to perform the\n            s3:PutBucketTagging action. By default, the bucket owner has this\n         permission and can grant this permission to others.\n\nThe following operations are related to DeleteBucketTagging:\n\nGetBucketTagging\n         \n      \n         \n            PutBucketTagging",
   "apiNameFromFile": "DeleteBucketTagging",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?tagging HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

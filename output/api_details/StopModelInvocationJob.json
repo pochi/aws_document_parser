@@ -1,6 +1,8 @@
 {
+  "serviceName": "bedrock",
   "apiName": "StopModelInvocationJob",
   "apiNameFromUrl": "StopModelInvocationJob",
+  "description": "Stops a batch inference job. You're only charged for tokens that were already processed. For more information, see Stop a batch inference job.",
   "apiNameFromFile": "StopModelInvocationJob",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopModelInvocationJob.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /model-invocation-job/<code class=\"replaceable\">jobIdentifier</code>/stop HTTP/1.1\n</code></pre>",

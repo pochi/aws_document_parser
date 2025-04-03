@@ -1,6 +1,8 @@
 {
+  "serviceName": "AmazonS3",
   "apiName": "DeleteBucketCors",
   "apiNameFromUrl": "DeleteBucketCors",
+  "description": "NoteThis operation is not supported for directory buckets.\n\nDeletes the cors configuration information set for the bucket.\n\nTo use this operation, you must have permission to perform the\n            s3:PutBucketCORS action. The bucket owner has this permission by default\n         and can grant this permission to others.\n\nFor information about cors, see Enabling Cross-Origin Resource Sharing in\n         the Amazon S3 User Guide.\n\nRelated Resources\n       \n       \n   \n         \n            PutBucketCors\n         \n      \n         \n            RESTOPTIONSobject",
   "apiNameFromFile": "DeleteBucketCors",
   "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketCors.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">DELETE /?cors HTTP/1.1\nHost: <code class=\"replaceable\">Bucket</code>.s3.amazonaws.com\nx-amz-expected-bucket-owner: <code class=\"replaceable\">ExpectedBucketOwner</code>\n</code></pre>",

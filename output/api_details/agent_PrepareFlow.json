@@ -1,6 +1,8 @@
 {
-  "apiName": "agent_PrepareFlow",
-  "apiNameFromUrl": "agent_PrepareFlow",
+  "serviceName": "bedrock_agent",
+  "apiName": "PrepareFlow",
+  "apiNameFromUrl": "PrepareFlow",
+  "description": "Prepares the DRAFT version of a flow so that it can be invoked. For more information, see Test a flow in Amazon Bedrock in the Amazon Bedrock User Guide.",
   "apiNameFromFile": "agent_PrepareFlow",
   "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareFlow.html",
   "requestSyntax": "<pre class=\"programlisting\"><div class=\"cPtrdm-7KdwiPXSFFsHVgw== vJiSh2XhSD0llt9UwFq9AA==\" data-testid=\"codeBtnContainer\"></div><!--DEBUG: cli ()--><code class=\"nohighlight hljs\" tabindex=\"0\">POST /flows/<code class=\"replaceable\">flowIdentifier</code>/ HTTP/1.1\n</code></pre>",
