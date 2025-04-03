@@ -4,6 +4,8 @@ import puppeteer from "puppeteer";
 import { existsSync } from 'fs';
 import { exit } from 'process';
 import { isReadonlyKeywordOrPlusOrMinusToken } from 'typescript';
+import { Ollama } from 'ollama';
+import { request } from 'http';
 
 // ディレクトリ内のJSONファイルを取得
 async function getJsonFiles(dirPath: string): Promise<string[]> {
@@ -18,13 +20,38 @@ async function getJsonFiles(dirPath: string): Promise<string[]> {
   }
 }
 
+async function getJapaneseTranslation(description: string): Promise<string> {
+  try {
+    const ollama = new Ollama({
+      host: 'http://host.docker.internal:11434'
+    });
+
+    const response = await ollama.chat({
+      model: 'phi4-mini:latest',
+      messages: [{ 
+        role: 'user', 
+        content: `以下を日本語に翻訳してください。${description}`
+      }]
+    });
+    
+    // 正しいレスポンスの取得方法
+    return response.message?.content || '翻訳に失敗しました';
+  } catch (error) {
+    console.error('翻訳エラー:', error);
+    return description; // エラー時は元のテキストを返す
+  }
+}
+
 // JSON を CSV に変換
-async function jsonToCsv(jsonData: any[], group: string): Promise<string[]> {
+async function jsonToCsv(jsonData: any[]): Promise<string[]> {
   const row = [];
   try {
-    row.push(group);
+    row.push(jsonData['serviceName']);
     row.push(jsonData['apiName']);
     row.push(jsonData['url']);
+    row.push(jsonData['description']);
+    // const description_jpn = await getJapaneseTranslation(jsonData['description']);
+    // row.push(description_jpn);
     const requestSyntax = await parseRequestSyntax(jsonData['requestSyntax']);
     //console.log(requestSyntax);
     row.push(requestSyntax['method']);
@@ -49,9 +76,11 @@ async function jsonToCsv(jsonData: any[], group: string): Promise<string[]> {
     row.push(errorList);
   } catch(error) {
     console.error(`CSVパースエラー: ${jsonData['apiName']} ${jsonData['url']}`);
-    // exit(0);
+    console.error(error);
+    exit(0);
   }
 
+  // console.log(row);
   return row;
 }
 
@@ -63,30 +92,71 @@ async function parseResponseSyntax(html: string): Promise<Record<string, string>
 
   const page = await browser.newPage();
   await page.setContent(html);
-  const codeText = await page.$eval('pre.programlisting code', (el) => el.textContent.trim());
+  
+  // レスポンス構文を取得（複数のセレクタを試す）
+  let codeText = '';
+  try {
+    codeText = await page.$eval('pre.programlisting code, div.programlisting code, pre code', 
+      (el) => el.textContent?.trim() || '');
+  } catch (error) {
+    console.warn('Failed to find code block with standard selectors, trying fallback...');
+    // フォールバック: すべてのpre要素から探す
+    const preElements = await page.$$('pre');
+    for (const pre of preElements) {
+      const text = await pre.evaluate(el => el.textContent?.trim() || '');
+      if (text.includes('HTTP/') || text.includes('{')) {
+        codeText = text;
+        break;
+      }
+    }
+  }
+
+  // コードブロックが見つからない場合の処理
+  if (!codeText) {
+    await browser.close();
+    return {
+      "http_version": "",
+      "status_code": "",
+      "headers": "{}",
+      "body": "",
+      "error": "Response syntax not found"
+    };
+  }
 
   // レスポンスの各部分を抽出
-  const [statusLine, ...restLines] = codeText.split('\n');
-  const [httpVersion, statusCode] = statusLine.split(' ');
+  let httpVersion = '';
+  let statusCode = '';
+  let headersObj: Record<string, string> = {};
+  let body = '';
 
-  // ヘッダーとボディを分離
-  const emptyLineIndex = restLines.findIndex(line => line.trim() === '');
-  const headers = restLines.slice(0, emptyLineIndex);
-  const bodyLines = restLines.slice(emptyLineIndex + 1);
-  const body = bodyLines.join('\n').trim();
+  const lines = codeText.split('\n');
+  
+  // HTTPステータスラインの有無を確認
+  if (lines[0].startsWith('HTTP/')) {
+    const [httpVer, status, ..._] = lines[0].split(' ');
+    httpVersion = httpVer;
+    statusCode = status;
 
-  // ヘッダーをオブジェクトに変換
-  const headersObj: Record<string, string> = {};
-  headers.forEach(header => {
-    const [key, value] = header.split(':').map(s => s.trim());
-    if (key && value) headersObj[key] = value;
-  });
+    // ヘッダーとボディを分離
+    const restLines = lines.slice(1);
+    const emptyLineIndex = restLines.findIndex(line => line.trim() === '');
+    const headers = emptyLineIndex >= 0 ? restLines.slice(0, emptyLineIndex) : [];
+    const bodyLines = emptyLineIndex >= 0 ? restLines.slice(emptyLineIndex + 1) : restLines;
+    body = bodyLines.join('\n').trim();
 
-  // 結果を表示
-  // console.log('HTTP Version:', httpVersion); // "HTTP/1.1"
-  // console.log('Status Code:', statusCode);  // "202"
-  // console.log('Headers:', headersObj);      // { "Content-type": "application/json" }
-  // console.log('Body:', body);              // JSON形式のレスポンスボディ
+    // ヘッダーをオブジェクトに変換
+    headers.forEach(header => {
+      const separatorIndex = header.indexOf(':');
+      if (separatorIndex > 0) {
+        const key = header.slice(0, separatorIndex).trim();
+        const value = header.slice(separatorIndex + 1).trim();
+        headersObj[key] = value;
+      }
+    });
+  } else {
+    // ステータスラインがない場合はボディのみとみなす
+    body = codeText.trim();
+  }
 
   await browser.close();
 
@@ -143,44 +213,82 @@ async function parseRequestSyntax(html: string): Promise<Record<string, string>>
 
   const page = await browser.newPage();
   await page.setContent(html);
-  const codeText = await page.$eval('pre.programlisting code', (el) => el.textContent.trim());
-
-  // リクエストの各部分を抽出
-  const [requestLine, ...restLines] = codeText.split('\n');
-  const [method, fullUrl, _httpVersion] = requestLine.split(' ');
-
-  // URLとクエリパラメータを分離
-  const [url, queryString] = fullUrl.split('?');
-  
-  // クエリパラメータを解析
-  const params: Record<string, string> = {};
-  if (queryString) {
-    queryString.split('&').forEach(pair => {
-      const [key, value] = pair.split('=');
-      params[key] = decodeURIComponent(value);
-    });
+  let codeText = '';
+  try {
+    codeText = await page.$eval('pre.programlisting code', (el) => el.textContent.trim());
+  } catch(error) {
+    // 上記が取れないときはRequest Syntaxがそもそも取れていない
+    return {
+      "method": '',
+      "http_version": '',
+      "headers": '',
+      "url": '',
+      "params": '',
+      "body": ''
+    };
   }
 
-  // ヘッダーとボディを分離
-  const emptyLineIndex = restLines.findIndex(line => line.trim() === '');
-  const headers = restLines.slice(0, emptyLineIndex);
-  const bodyLines = restLines.slice(emptyLineIndex + 1);
-  const body = bodyLines.join('\n').trim();
+  let method = '';
+  let url = '';
+  let fullUrl = '';
+  let httpVersion = '';
+  let params: Record<string, string> = {};
+  let headersObj: Record<string, string> = {};
+  let body = '';
 
-  // ヘッダーをオブジェクトに変換
-  const headersObj: Record<string, string> = {};
-  headers.forEach(header => {
-    const [key, value] = header.split(':').map(s => s.trim());
-    if (key && value) headersObj[key] = value;
-  });
+  const lines = codeText.split('\n');
+  const firstLineParts = lines[0].trim().split(' ');
+
+  // リクエストラインの有無を判定
+  const isRequestLine = firstLineParts.length >= 3 && 
+                       ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'].includes(firstLineParts[0]);
+
+  if (isRequestLine) {
+    // リクエストラインがある場合
+    [method, fullUrl, httpVersion] = firstLineParts;
+
+    // URLとクエリパラメータを分離
+    const [baseUrl, queryString] = fullUrl.split('?');
+    url = baseUrl;
+
+    // クエリパラメータを解析
+    if (queryString) {
+      queryString.split('&').forEach(pair => {
+        const [key, value] = pair.split('=');
+        if (key) params[key] = decodeURIComponent(value || '');
+      });
+    }
+
+    // ヘッダーとボディを分離
+    const restLines = lines.slice(1);
+    const emptyLineIndex = restLines.findIndex(line => line.trim() === '');
+    const headers = emptyLineIndex >= 0 ? restLines.slice(0, emptyLineIndex) : [];
+    const bodyLines = emptyLineIndex >= 0 ? restLines.slice(emptyLineIndex + 1) : [];
+    body = bodyLines.join('\n').trim();
+
+    // ヘッダーをオブジェクトに変換
+    headers.forEach(header => {
+      const separatorIndex = header.indexOf(':');
+      if (separatorIndex > 0) {
+        const key = header.slice(0, separatorIndex).trim();
+        const value = header.slice(separatorIndex + 1).trim();
+        headersObj[key] = value;
+      }
+    });
+  } else {
+    // リクエストラインがない場合（ボディのみ）
+    body = lines.join('\n').trim();
+  }
 
   await browser.close();
+
   return {
     "method": method,
+    "http_version": httpVersion,
     "headers": JSON.stringify(headersObj),
     "url": url,
     "params": JSON.stringify(params),
-    "body": body,
+    "body": body
   };
 }
 
@@ -233,6 +341,8 @@ async function saveToCsv(rows: any[], outputDir: string) {
     'ActionGroup',
     'API Name',
     'API Reference URL',
+    'description',
+    // 'description(jpn)',
     'HTTP Method',
     'Request Headers',
     'Endpoint',
@@ -274,36 +384,6 @@ async function saveToCsv(rows: any[], outputDir: string) {
   console.log(`CSVファイルを生成: ${csvFilePath}`);
 }
 
-function detectGroup(filename: string, url: string): string {
-  const detect_groups = filename.split(/[_-]/);
-  try {
-    if (detect_groups[0] == 'agent-runtime') {
-      return 'agent-runtime';
-    }
-  
-    if (detect_groups[0] == 'agent') {
-      return 'agent';
-    }
-
-    if (detect_groups[0] == 'runtime') {
-      return 'bedrock-runtime';
-    }
-
-    if (url.includes('AmazonS3')) {
-      return 'AmazonS3';
-    }
-
-    if (url.includes('opensearch')) {
-      return 'opensearch';
-    }
-
-  } finally {
-    return 'bedrock';
-  }
-
-  return 'bedrock';
-}
-
 async function createCsvDetails() {
   const inputDir = path.join(process.cwd(), 'output', 'api_details');
   const outputDir = path.join(process.cwd(), 'output', 'csv_details');
@@ -318,9 +398,8 @@ async function createCsvDetails() {
   for (const jsonFile of jsonFiles) {
     try {
       const jsonData = JSON.parse(await readFile(jsonFile, 'utf-8'));
-      const group = detectGroup(jsonFile, jsonData['url']);
       // console.log(jsonData);
-      const row = await jsonToCsv(jsonData, group);
+      const row = await jsonToCsv(jsonData);
       rows.push(row);
     } catch (error) {
       console.error(`ファイル処理エラー: ${jsonFile}`, error);
